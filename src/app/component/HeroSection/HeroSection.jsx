@@ -4,7 +4,7 @@ import Carousal from './Carousal/Carousal';
 
 const HeroSection = () => {
     return (
-        <div className=' w-full flex justify-between items-center bg-black'>
+        <div className=' w-full flex justify-between items-center bg-black mb-32'>
             <Menu></Menu>
             <Carousal></Carousal>
         </div>
