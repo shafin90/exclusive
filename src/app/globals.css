@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+body{
+    overflow-x: hidden;
+}
+
 /* ScrollBar.css */
 
 /* Track */

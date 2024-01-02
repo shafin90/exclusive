@@ -2,21 +2,26 @@
 import React from 'react';
 
 import StarRating from "@/app/component/StarRating/StarRating";
+import CardImage from '../CardImage/CardImage';
 
 const Card = () => {
     return (
-        <div className='w-80 bg-slate-100 pb-10'>
-            <img
-                src="https://wallpapercave.com/wp/wp4364789.jpg"
-                alt="Microphone"
-                loading="lazy" // Enable lazy loading
-                className="w-full h-5/6" // Make the image responsive
-            />
-            <h1 className='font-bold my-1 text-lg ms-3 mt-3'>Gaming Console</h1>
-            <p className='text-sm ms-3 mb-1'>$120</p>
+        <div className='w-80 bg-slate-100 pb-10 me-10'>
+            {/* card image container */}
+            <CardImage></CardImage>
 
-            <div className='ms-3'>
-               <StarRating ratings={3.5}></StarRating>
+            {/* Card heading */}
+            <h1 className='font-bold my-1 text-lg ms-3 mt-3'>Gaming Console</h1>
+
+            {/* Price */}
+            <p className='text-sm ms-3 '>$120</p>
+
+            {/* Star rating */}
+            <div className='ms-3 flex justify-start items-center'>
+                <StarRating ratings={3.5}></StarRating>
+                <p className=' text-slate-800 ms-3 mt-2'>
+                    (88)
+                </p>
             </div>
 
 

@@ -7,6 +7,7 @@ export default function Home() {
     <div className="w-5/6 mx-auto">
       <HeroSection></HeroSection>
       <FlashSales></FlashSales>
+
     </div>
   )
 }
