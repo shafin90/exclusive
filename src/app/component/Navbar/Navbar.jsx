@@ -33,13 +33,14 @@ const Navbar = () => {
             {/* Searchbar and wishlist========= */}
             <div className='w-3/12 flex justify-between items-center'>
                 {/* Input field and search icon */}
-                <div className=' bg-slate-100 rounded-md flex justify-content-between  items-center w-10/12'>
+                <div className=' bg-slate-100 rounded flex justify-content-between  items-center w-10/12'>
                     
                     <input
                         type="text"
                         placeholder='What are you looking for?'
-                        className='ps-5 py-4 text-sm bg-transparent outline-none w-10/12' />
-                    
+                        className='ps-5 py-4 text-sm bg-transparent w-10/12 border-none outline-none focus:border-none'
+                        
+                        />
                     <IoIosSearch className='w-2/12 text-xl' />
                 </div>
 
