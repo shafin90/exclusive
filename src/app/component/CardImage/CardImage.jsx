@@ -27,7 +27,7 @@ const CardImage = () => {
                     isHover
                         ?
                         'hidden' :
-                        'absolute bg-black text-white py-2 hover:py-4 hover:text-xl text-center bottom-0 transition-all'
+                        'cursor-pointer absolute bg-black text-white py-2 hover:py-4 hover:text-xl text-center bottom-0 transition-all'
                 }
             >
                 Add to cart

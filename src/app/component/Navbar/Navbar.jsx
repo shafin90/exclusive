@@ -14,7 +14,7 @@ const Navbar = () => {
             {/* menubar========== */}
             <ul className=' flex justify-between items-center w-4/12'>
                 <li>
-                    <Link href="" className=' font-semibold' >Home</Link>
+                    <Link href="" className=' font-semibold'>Home</Link>
                 </li>
 
                 <li>

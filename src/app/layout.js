@@ -3,6 +3,7 @@ import './globals.css'
 import TopNavbar from './component/TopNavbar/TopNavbar'
 import Navbar from './component/Navbar/Navbar'
 import AnimatedCursor from 'react-animated-cursor'
+import Footer from './component/Footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,8 @@ export default function RootLayout({ children }) {
         <Navbar></Navbar>
         <hr />
         {children}
+
+        <Footer></Footer>
 
       </body>
     </html>
