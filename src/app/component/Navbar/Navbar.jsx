@@ -3,6 +3,7 @@ import React from 'react';
 import { IoIosSearch } from "react-icons/io";
 import { TbJewishStar } from "react-icons/tb";
 import { IoCartOutline } from "react-icons/io5";
+import { SlLogin } from "react-icons/sl";
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
             <Link href="" className=' text-black font-bold w-2/12 text-4xl '>Exclusive</Link>
 
             {/* menubar========== */}
-            <ul className=' flex justify-between items-center w-4/12'>
+            <ul className=' flex justify-between items-center w-3/12'>
                 <li>
                     <Link href="" className=' font-semibold'>Home</Link>
                 </li>
@@ -22,18 +23,14 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                    <Link href="" className=' font-semibold'>About</Link>
-                </li>
-
-                <li>
-                    <Link href="" className=' font-semibold'>Sign UP</Link>
+                    <Link href="" className=' font-semibold'>About Us</Link>
                 </li>
             </ul>
 
             {/* Searchbar and wishlist========= */}
-            <div className='w-3/12 flex justify-between items-center'>
+            <div className='w-5/12 flex justify-between items-center'>
                 {/* Input field and search icon */}
-                <div className=' bg-slate-100 rounded flex justify-content-between  items-center w-10/12'>
+                <div className=' bg-slate-100 rounded flex justify-content-between  items-center w-8/12'>
 
                     <input
                         type="text"
@@ -44,9 +41,10 @@ const Navbar = () => {
                 </div>
 
                 {/* wish icon and cart icon container div */}
-                <div className='w-3/12 flex justify-end items-center'>
-                    <TbJewishStar className=' text-xl relative right-2  hover:rotate-90 transition-all hover:scale-125' />
-                    <IoCartOutline className=' text-2xl  hover:scale-125 transition-all' />
+                <div className='w-3/12 flex justify-between items-center'>
+                    <TbJewishStar className=' text-xl relative right-2  hover:rotate-90 transition-all hover:scale-125 cursor-pointer' />
+                    <IoCartOutline className=' text-2xl  hover:scale-125 transition-all cursor-pointer' />
+                    <SlLogin className=' text-2xl  hover:scale-125 transition-all cursor-pointer'  />
                 </div>
             </div>
         </div>

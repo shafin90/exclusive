@@ -1,62 +1,63 @@
 import Link from 'next/link';
 import React from 'react';
-import { BiFemale } from "react-icons/bi";
-import { FaMale } from "react-icons/fa";
-import { CgSmartHomeWashMachine } from "react-icons/cg"
-import { IoHome } from "react-icons/io5";
-import { AiFillMedicineBox } from "react-icons/ai";
-import { MdOutlineSportsScore } from "react-icons/md";
-import { FaBaby } from "react-icons/fa";
-import { MdLocalGroceryStore } from "react-icons/md";
-import { MdHealthAndSafety } from "react-icons/md";
+import { TfiYoutube } from "react-icons/tfi";
+import { FaHeadphones } from "react-icons/fa";
+import { IoWatchOutline } from "react-icons/io5";
+import { MdOutlineAddHomeWork } from "react-icons/md";
+import { IoGameControllerSharp } from "react-icons/io5";
+import { FaCameraRetro } from "react-icons/fa";
+import { LuMonitor } from "react-icons/lu";
+import { FaComputer } from "react-icons/fa6";
+import { IoBicycle } from "react-icons/io5";
+
 
 const Menu = () => {
     return (
         <div className=' w-3/12 border-r'>
             <ul>
                 <li className=' hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all'>
-                    <BiFemale className='text-2xl me-2' />
-                    <Link href="">Womans Fashion</Link>
+                    <TfiYoutube  className='text-2xl me-2' />
+                    <Link href="">Youtube Studio Gears</Link>
                 </li>
 
                 <li className='hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all'>
-                    <FaMale className='text-xl me-3' />
-                    <Link href="">Mens Fashion</Link>
+                    <FaHeadphones className='text-xl me-3' />
+                    <Link href="">HeadPhone & EarPhone</Link>
                 </li>
 
                 <li className=' hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all'>
-                    <CgSmartHomeWashMachine className='text-xl me-3' />
-                    <Link href="">Electronics</Link>
+                    <IoWatchOutline  className='text-xl me-3' />
+                    <Link href="">Watch Collection</Link>
                 </li>
 
                 <li className='flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all hover:ps-2'>
-                    <IoHome className='text-xl me-3' />
-                    <Link href="">Home & Lifestyle</Link>
+                    <MdOutlineAddHomeWork  className='text-xl me-3' />
+                    <Link href="">Home Appliances</Link>
                 </li>
 
                 <li className='flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all hover:ps-2'>
-                    <AiFillMedicineBox className='text-xl me-3' />
-                    <Link href="">Medicine</Link>
+                    <IoGameControllerSharp  className='text-xl me-3' />
+                    <Link href="">Game</Link>
                 </li>
 
                 <li className='flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all hover:ps-2'>
-                    <MdOutlineSportsScore className='text-xl me-3' />
-                    <Link href="">Sports & Outdoor</Link>
+                    <FaCameraRetro className='text-xl me-3' />
+                    <Link href="">Camera</Link>
                 </li>
 
                 <li className='flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all hover:ps-2'>
-                    <FaBaby className='text-xl me-3' />
-                    <Link href="">Babys & Toys</Link>
+                    <LuMonitor  className='text-xl me-3' />
+                    <Link href="">Telivishion</Link>
                 </li>
 
                 <li className='flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all hover:ps-2'>
-                    <MdLocalGroceryStore className='text-xl me-3' />
-                    <Link href="">Groceries & Pets</Link>
+                    <FaComputer  className='text-xl me-3' />
+                    <Link href="">Computer & Office</Link>
                 </li>
 
                 <li className='flex justify-start items-center py-4 border-b bg-white hover:bg-slate-100 transition-all hover:ps-2'>
-                    <MdHealthAndSafety className='text-xl me-3' />
-                    <Link href="">Health & Beauty</Link>
+                    <IoBicycle  className='text-xl me-3' />
+                    <Link href="">Bicycle & Accessories</Link>
                 </li>
             </ul>
         </div>
