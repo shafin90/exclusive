@@ -10,7 +10,7 @@ import OurProducts from "./component/OurProducts/OurProducts";
 
 export default function Home() {
   return (
-    <div className="w-5/6 mx-auto">
+    <div className=" w-11/12 lg:w-5/6 mx-auto">
       <HeroSection></HeroSection>
       <FlashSales></FlashSales>
       <BrowseByCategory></BrowseByCategory>

@@ -14,7 +14,7 @@ const OurProducts = () => {
             <TagHeading tagHeading="Explore Our Products"></TagHeading>
 
             {/* Our product items first row */}
-            <div className=' flex justify-between items-center mb-4'>
+            <div className=' flex flex-col lg:flex-row justify-between items-center mb-4'>
                 <Card BestSellingProducts={true}></Card>
                 <Card BestSellingProducts={true}></Card>
                 <Card BestSellingProducts={true}></Card>
@@ -22,7 +22,7 @@ const OurProducts = () => {
             </div>
 
             {/* Our product items Second row */}
-            <div className=' flex justify-between items-center mb-16'>
+            <div className=' flex flex-col lg:flex-row justify-between items-center mb-16'>
                 <Card BestSellingProducts={true}></Card>
                 <Card BestSellingProducts={true}></Card>
                 <Card BestSellingProducts={true}></Card>

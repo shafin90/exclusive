@@ -52,7 +52,7 @@ const FlashSales = () => {
             {/* Card collection */}
             <div className=' relative h-96 mb-12'>
                 <div style={{ left: moveLeftToRight + "px", transition: "left 1s ease-in-out" }}
-                    className='absolute  flex justify-between items-center transition-all'>
+                    className='absolute flex justify-between items-center transition-all'>
                     <Card></Card>
                     <Card></Card>
                     <Card></Card>

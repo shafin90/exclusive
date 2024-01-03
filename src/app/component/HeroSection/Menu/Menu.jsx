@@ -13,7 +13,7 @@ import { IoBicycle } from "react-icons/io5";
 
 const Menu = () => {
     return (
-        <div className=' w-3/12 border-r'>
+        <div className=' hidden lg:block  w-3/12 border-r'>
             <ul>
                 <li className=' hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all'>
                     <TfiYoutube  className='text-2xl me-2' />

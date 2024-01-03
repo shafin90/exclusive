@@ -7,10 +7,10 @@ const Featured = () => {
         <div className=' mb-12'>
 
 
-            <div className=' w-full h-96 flex justify-between items-center relative top-28'>
+            <div className=' w-full h-auto lg:h-96 flex flex-col lg:flex-row justify-between items-start lg:items-center relative top-28'>
 
                 {/* Left side image */}
-                <div className=' w-3/6  me-2 '>
+                <div className=' w-full lg:w-3/6  me-2 mb-5 lg:mb-0 '>
 
                     <div className=' flex flex-col justify-between items-start h-2/6'>
                         <Tag tagName="Featured" ></Tag>
@@ -34,7 +34,7 @@ const Featured = () => {
                 </div>
 
                 {/* Right side image container */}
-                <div className=' flex flex-col justify-between items-center w-3/6 ms-2'>
+                <div className=' flex flex-col justify-between items-center w-full lg:w-3/6 ms-0 lg:ms-2'>
                     {/* Top image */}
                     <div className=' h-3/6 mb-2 overflow-hidden'>
                         <img

@@ -29,7 +29,7 @@ const Carousal = () => {
     return () => clearInterval(intervalId);
   }, []); // Empty dependency array means this effect runs once after the initial render
 
-  console.log(num);
+
 
   return (
     <div className='w-9/12 h-96 flex justify-end items-end ps-10 transition-all bg-black'>

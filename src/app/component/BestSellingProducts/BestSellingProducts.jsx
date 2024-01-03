@@ -10,7 +10,7 @@ const BestSellingProducts = () => {
             <Tag tagName="This Month"></Tag>
 
             {/* tag heading with card controller button */}
-            <div className=' flex justify-between items-center'>
+            <div className=' flex flex-col lg:flex-row justify-between items-start lg:items-center'>
                 <TagHeading tagHeading="Best Selling Products"></TagHeading>
 
                 {/* Right left button */}
@@ -18,7 +18,7 @@ const BestSellingProducts = () => {
             </div>
 
             {/* Best selling product items */}
-            <div className=' flex justify-between items-center'>
+            <div className=' flex flex-col lg:flex-row justify-between items-center'>
                 <Card BestSellingProducts={true}></Card>
                 <Card BestSellingProducts={true}></Card>
                 <Card BestSellingProducts={true}></Card>
