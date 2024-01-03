@@ -8,8 +8,10 @@ import { SlLogin } from "react-icons/sl";
 
 
 const Navbar = () => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    
+    const [windowWidth, setWindowWidth] = useState(1320);
+    useEffect(()=>{
+        setWindowWidth(window.innerWidth);
+    },[])
     return (
         <div className=' flex justify-between items-center w-5/6 mx-auto mt-8 mb-6'>
             {/* Logo============ */}

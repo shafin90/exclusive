@@ -9,9 +9,12 @@ import Link from 'next/link';
 
 const BottomNav = () => {
     const [isHidden, setIsHidden] = useState(false);
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+    const [screenWidth, setScreenWidth] = useState(1320)
+
+
 
     useEffect(() => {
+        setScreenWidth(window.innerWidth);
         const handleScroll = () => {
             const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
