@@ -24,10 +24,10 @@ export default function RootLayout({ children }) {
         <Navbar></Navbar>
         <hr />
         {children}
-        <BottomNav></BottomNav>
+        
 
         <Footer></Footer>
-
+        <BottomNav></BottomNav>
       </body>
     </html>
   )
