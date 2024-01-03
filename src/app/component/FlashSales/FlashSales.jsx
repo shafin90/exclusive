@@ -27,7 +27,7 @@ const FlashSales = () => {
                         onClick={() => {
                             if (moveLeftToRight < 0) {
                                 setMoveLeftToRight(moveLeftToRight + 600)
-                            }else{
+                            } else {
                                 setMoveLeftToRight(0)
                             }
                         }
@@ -67,9 +67,11 @@ const FlashSales = () => {
 
 
             {/* View all products button */}
-            <div className=' relative  '>
+            <div className=' relative '>
                 <div className=' flex justify-center items-center w-100'>
-                    <button style={{ border: "1px solid black" }} className=' bg-black text-white px-8 py-3 border-black hover:bg-white hover:text-black font-semibold transition-all'>
+                    <button
+                        style={{ border: "1px solid black" }}
+                        className=' bg-black text-white px-8 py-3 border-black hover:bg-white hover:text-black font-semibold transition-all mt-12 lg:mt-0 '>
                         View All Products
                     </button>
                 </div>

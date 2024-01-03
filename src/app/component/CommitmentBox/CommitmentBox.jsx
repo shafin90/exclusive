@@ -4,7 +4,7 @@ import React from 'react';
 
 const CommitmentBox = ({ img, heading, article }) => {
     return (
-        <div className=' flex flex-col justify-start items-center w-3/12'>
+        <div className=' flex flex-col justify-start items-center w-full md:w-3/12 mb-10 md:mb-0'>
             <Image
                 src={img}
                 width={60}

@@ -6,7 +6,7 @@ import img3 from "../../../../public/images/Services (2).jpg"
 
 const OurCommitment = () => {
     return (
-        <div className=' flex justify-evenly items-center relative top-72 my-40'>
+        <div className=' flex flex-col md:flex-row justify-evenly items-center relative top-72 my-40'>
             <CommitmentBox
                 img={img1}
                 heading="FREE AND FAST DELIVERY"

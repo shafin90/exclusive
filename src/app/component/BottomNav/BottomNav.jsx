@@ -9,6 +9,7 @@ import Link from 'next/link';
 
 const BottomNav = () => {
     const [isHidden, setIsHidden] = useState(false);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,15 +32,15 @@ const BottomNav = () => {
         };
     }, []);
 
-    const navStyle = isHidden ? 'hidden' : 'flex';
+    const navStyle = isHidden ? 'hidden' : screenWidth<1030 ?'flex':'hidden';
 
     return (
         <div className={`bg-black w-screen sticky bottom-0 ${navStyle} justify-between items-center py-4`}>
             <div className=' w-9/12 mx-auto flex justify-between items-center'>
-                <Link href="" className=" text-white">
-                    <IoReorderThreeOutline className=' text-2xl' />
+                <Link href="/mobieMenu" className=" text-white">
+                    <IoReorderThreeOutline className=' text-4xl' />
                 </Link>
-                <Link href="" className=" text-white">
+                <Link href="/" className=" text-white">
                     <GoHome className=' text-2xl' />
                 </Link>
                 <Link href="" className=" text-white">

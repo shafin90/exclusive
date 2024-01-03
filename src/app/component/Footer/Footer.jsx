@@ -5,9 +5,9 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 const Footer = () => {
     return (
         <div className=' bg-black  w-full relative top-64 py-24'>
-            <div className=' flex justify-between items-start mx-auto w-5/6'>
+            <div className=' flex flex-col lg:flex-row justify-between items-start mx-auto w-5/6'>
                 {/* First Column */}
-                <div className=' w-3/12'>
+                <div className=' w-full lg:w-3/12 mb-12 lg:mb-0'>
                     <h1 className=' font-semibold text-xl text-white mb-4'>
                         Exclusive
                     </h1>
@@ -34,7 +34,7 @@ const Footer = () => {
 
 
                 {/* Second Column */}
-                <div className=' w-2/12'>
+                <div className=' w-full lg:w-2/12 mb-12 lg:mb-0'>
                     <h1 className=' font-medium text-lg text-white mb-6'>
                         Support
                     </h1>
@@ -54,7 +54,7 @@ const Footer = () => {
 
 
                 {/* Third Column */}
-                <div className=' w-2/12'>
+                <div className=' w-full lg:w-2/12 mb-12 lg:mb-0'>
                     <h1 className=' font-medium text-lg text-white mb-6'>
                         Account
                     </h1>
@@ -83,7 +83,7 @@ const Footer = () => {
 
 
                 {/* Fourth Column */}
-                <div className=' w-2/12'>
+                <div className=' w-full lg:w-2/12 mb-12 lg:mb-0'>
                     <h1 className=' font-medium text-lg text-white mb-6'>
                         Quick Link
                     </h1>
@@ -106,7 +106,7 @@ const Footer = () => {
                 </div>
 
                 {/* Fifth Column */}
-                <div className=' w-3/12'>
+                <div className=' w-full lg:w-3/12 mb-12 lg:mb-0'>
                     <h1 className=' font-medium text-lg text-white mb-6'>
                         Download App
                     </h1>
