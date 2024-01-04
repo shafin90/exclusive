@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 const BottomNav = () => {
     const [isHidden, setIsHidden] = useState(false);
-    const [screenWidth, setScreenWidth] = useState(1320)
+    const [screenWidth, setScreenWidth] = useState(null)
 
 
 

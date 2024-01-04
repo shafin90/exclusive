@@ -5,15 +5,9 @@ import { IoIosSearch } from "react-icons/io";
 import { TbJewishStar } from "react-icons/tb";
 import { IoCartOutline } from "react-icons/io5";
 import { SlLogin } from "react-icons/sl";
-import { useRouter } from 'next/router';
-
 
 const Navbar = () => {
-    const [windowWidth, setWindowWidth] = useState(1320);
-    const router = useRouter();
-   
-    const {pathname} = router;
-
+    const [windowWidth, setWindowWidth] = useState(null);
     useEffect(()=>{
         setWindowWidth(window.innerWidth);
     },[])
