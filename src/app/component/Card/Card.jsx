@@ -6,7 +6,7 @@ import CardImage from '../CardImage/CardImage';
 
 const Card = ({BestSellingProducts}) => {
     return (
-        <div className={BestSellingProducts?' mt-10 lg:mt-0 w-80 bg-slate-100 pb-10 me-3':' mt-10 lg:mt-0 w-80 bg-slate-100 pb-10 me-10'} >
+        <div className={BestSellingProducts?'mt-10 lg:mt-0 w-80 bg-slate-100 pb-10 me-3':' mt-10 lg:mt-0 w-80 bg-slate-100 pb-10 me-10'} >
             {/* card image container */}
             <CardImage></CardImage>
 

@@ -5,13 +5,19 @@ import { IoIosSearch } from "react-icons/io";
 import { TbJewishStar } from "react-icons/tb";
 import { IoCartOutline } from "react-icons/io5";
 import { SlLogin } from "react-icons/sl";
+import { useRouter } from 'next/router';
 
 
 const Navbar = () => {
     const [windowWidth, setWindowWidth] = useState(1320);
+    const router = useRouter();
+   
+    const {pathname} = router;
+
     useEffect(()=>{
         setWindowWidth(window.innerWidth);
     },[])
+   
     return (
         <div className=' flex justify-between items-center w-5/6 mx-auto mt-8 mb-6'>
             {/* Logo============ */}

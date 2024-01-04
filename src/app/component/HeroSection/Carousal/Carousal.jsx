@@ -32,7 +32,7 @@ const Carousal = () => {
 
 
   return (
-    <div className='w-9/12 h-96 flex justify-end items-end ps-10 transition-all bg-black'>
+    <div className='w-9/12 h-96 flex justify-center items-center lg:justify-end lg:items-end ps-10 transition-all bg-black'>
 
       <Image
         src={img[num]}
