@@ -19,9 +19,9 @@ const FlashSales = () => {
             </div>
 
             {/* Card collection */}
-            <div className=' overflow-hidden  '>
-                <div className='  flash_Sale_Container relative mb-8 overflow-x-scroll overflow-y-hidden'>
-                    <div className='absolute flex justify-between items-center transition-all'>
+            <div className=' w-full overflow-hidden '>
+                <div className=' w-full  flash_Sale_Container relative mb-8 overflow-x-scroll overflow-y-hidden'>
+                    <div className=' h-full absolute  grid grid-rows-1  grid-cols-8 gap-5 transition-all'>
                         <Card></Card>
                         <Card></Card>
                         <Card></Card>

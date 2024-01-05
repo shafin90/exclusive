@@ -17,7 +17,7 @@ const page = () => {
             <ul>
                 <li className=' hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all'>
                     <TfiYoutube  className='text-2xl me-2' />
-                    <Link href="">Youtube Studio Gears</Link>
+                    <Link href="/youtube">Youtube Studio Gears</Link>
                 </li>
 
                 <li className='hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all'>

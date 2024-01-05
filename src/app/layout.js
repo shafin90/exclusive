@@ -6,6 +6,9 @@ import AnimatedCursor from 'react-animated-cursor'
 import Footer from './component/Footer/Footer'
 import BottomNav from './component/BottomNav/BottomNav'
 
+
+
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -17,17 +20,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <AnimatedCursor
-          color='0,0,0'
-        /> */}
-        <TopNavbar></TopNavbar>
-        <Navbar></Navbar>
-        <hr />
-        {children}
-        
+  
+          <TopNavbar></TopNavbar>
+          <Navbar></Navbar>
+          <hr />
+          {children}
 
-        <Footer></Footer>
-        <BottomNav></BottomNav>
+
+          <Footer></Footer>
+          <BottomNav></BottomNav>
+        
       </body>
     </html>
   )

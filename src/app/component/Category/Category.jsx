@@ -16,7 +16,7 @@ const Category = ({category}) => {
         <div
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
-            className={isHover ? ' cursor-pointer bg-black w-48 h-40 border flex justify-center items-center me-4 transition-all mb-4 lg:mb-0' : 'cursor-pointer transition-all bg-white w-48 h-40 border flex justify-center items-center me-4 mb-4 lg:mb-0'} >
+            className={isHover ? ' cursor-pointer bg-black w-full h-40 border flex justify-center items-center me-4 transition-all mb-4 lg:mb-0' : 'cursor-pointer transition-all bg-white w-full h-40 border flex justify-center items-center me-4 mb-4 lg:mb-0'} >
 
                 {
                 category=="phone"? 

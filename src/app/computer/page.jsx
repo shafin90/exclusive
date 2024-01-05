@@ -1,14 +1,13 @@
-import React from 'react';
-import Card from '../component/Card/Card';
-import { TfiYoutube } from 'react-icons/tfi';
 import axios from 'axios';
+import React from 'react';
+import { FaHeadphones } from 'react-icons/fa';
+import Card from '../component/Card/Card';
 
 const page = async () => {
-
     const response = await axios.get("http://localhost:3000/api/products");
     const allData = response.data; // get all the data
 
-    const youtubeData = allData.filter(item => item.category === "Youtube Studio Gear");// get all youtube related products
+    const computerData = allData.filter(item => item.category === "Computer & Office");// get all youtube related products
 
 
 
@@ -21,7 +20,7 @@ const page = async () => {
                 {/* Category Logo =========*/}
                 <div className='flex justify-start items-center '>
                     <div className=' w-20 bg-black h-12'>,</div>
-                    <TfiYoutube className='text-5xl ms-1' />
+                    <FaHeadphones className='text-5xl ms-1' />
                 </div>
 
                 {/* Filtering =========*/}
@@ -62,10 +61,10 @@ const page = async () => {
 
 
             {/* Youtube studio related product collections */}
-            <div className=' gap-5 w-full  grid md:grid-rows-5 md:grid-cols-2   lg:grid-rows-3 lg:grid-cols-3 '>
+            <div className=' w-full grid mdgrid-rows-5 md:grid-cols-2   lg:grid-rows-3 lg:grid-cols-3  gap-5'>
 
                 {
-                    youtubeData.map(item => <Card
+                    computerData.map(item => <Card
                         img={item.img}
                         cardHeading={item.name}
                         price={item.price}

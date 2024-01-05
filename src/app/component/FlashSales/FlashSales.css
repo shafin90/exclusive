@@ -4,11 +4,19 @@
   }
 
   .flash_Sale_Container{
-    height: 400px;
+    height: 450px;
+  }
+
+  /* .flash_Sale_Container{
+    width: 2000px;
+  } */
+  .flash_Sale_Container>div{
+    width: 3050px;
+    
   }
   @media screen and (max-width:1025px) {
     .flash_Sale_Container{
-      height: 440px;
+      height: 450px;
     } 
   }
 

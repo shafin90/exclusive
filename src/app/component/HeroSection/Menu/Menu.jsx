@@ -21,49 +21,65 @@ const Menu = () => {
             <ul>
                 <li
                     onClick={() => router.push("/youtube")}
-                    className='cursor-pointer hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all'>
+                    className='cursor-pointer hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all'>
                     <TfiYoutube className='text-2xl me-2' />
                     <Link href="/youtube">Youtube Studio Gears</Link>
                 </li>
 
-                <li className='cursor-pointer hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all'>
+                <li
+                    onClick={() => router.push("/headPhone")}
+                    className='cursor-pointer hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all'>
                     <FaHeadphones className='text-xl me-3' />
-                    <Link href="">HeadPhone & EarPhone</Link>
+                    <Link href="/headPhone">HeadPhone & EarPhone</Link>
                 </li>
 
-                <li className='cursor-pointer hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all'>
+                <li
+                    onClick={() => router.push("/watch")}
+                    className='cursor-pointer hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all'>
                     <IoWatchOutline className='text-xl me-3' />
-                    <Link href="">Watch Collection</Link>
+                    <Link href="/watch">Watch Collection</Link>
                 </li>
 
-                <li className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all hover:ps-2'>
+                <li
+                    onClick={() => router.push("/homeApplicance")}
+                    className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <MdOutlineAddHomeWork className='text-xl me-3' />
-                    <Link href="">Home Appliances</Link>
+                    <Link href="/homeApplicance">Home Appliances</Link>
                 </li>
 
-                <li className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all hover:ps-2'>
+                <li
+                    onClick={() => router.push("/game")}
+                    className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <IoGameControllerSharp className='text-xl me-3' />
-                    <Link href="">Game</Link>
+                    <Link href="/game">Game</Link>
                 </li>
 
-                <li className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all hover:ps-2'>
+                <li
+                    onClick={() => router.push("/camera")}
+                    className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <FaCameraRetro className='text-xl me-3' />
-                    <Link href="">Camera</Link>
+                    <Link href="/camera">Camera</Link>
                 </li>
 
-                <li className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all hover:ps-2'>
+                <li
+                    onClick={() => router.push("/telivision")}
+                    className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <LuMonitor className='text-xl me-3' />
-                    <Link href="">Telivishion</Link>
+                    <Link href="telivision">Telivishion</Link>
                 </li>
 
-                <li className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-slate-100 transition-all hover:ps-2'>
+                <li
+                    onClick={() => router.push("/computer")}
+                    className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <FaComputer className='text-xl me-3' />
-                    <Link href="">Computer & Office</Link>
+                    <Link href="/computer">Computer & Office</Link>
                 </li>
 
-                <li className='cursor-pointer flex justify-start items-center py-4 border-b bg-white hover:bg-slate-100 transition-all hover:ps-2'>
+                <li
+                    onClick={() => router.push("/bicycle")}
+                    className='cursor-pointer flex justify-start items-center py-4 border-b bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <IoBicycle className='text-xl me-3' />
-                    <Link href="">Bicycle & Accessories</Link>
+                    <Link href="/bicycle">Bicycle & Accessories</Link>
                 </li>
             </ul>
         </div>

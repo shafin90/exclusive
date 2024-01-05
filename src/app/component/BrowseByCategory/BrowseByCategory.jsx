@@ -14,7 +14,7 @@ const BrowseByCategory = () => {
             </div>
 
             {/*brows by Categories */}
-            <div className=' flex flex-col lg:flex-row justify-between items-center'>
+            <div className=' grid md:grid-rows-2 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-6 gap-x-3'>
                 <Category category="phone"></Category>
                 <Category category="computer"></Category>
                 <Category category="smartWatch"></Category>

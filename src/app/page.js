@@ -8,8 +8,10 @@ import OurCommitment from "./component/OurCommitment/OurCommitment";
 import OurProducts from "./component/OurProducts/OurProducts";
 
 
+
 export default function Home() {
  
+
   return (
     <div className=" w-11/12 lg:w-5/6 mx-auto">
       <HeroSection  ></HeroSection>

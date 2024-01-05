@@ -18,7 +18,7 @@ const BestSellingProducts = () => {
             </div>
 
             {/* Best selling product items */}
-            <div className=' flex flex-col lg:flex-row justify-between items-center'>
+            <div className=' grid  md:grid-rows-2 md:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3  gap-4'>
                 <Card BestSellingProducts={true}></Card>
                 <Card BestSellingProducts={true}></Card>
                 <Card BestSellingProducts={true}></Card>

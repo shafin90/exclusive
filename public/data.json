@@ -1,0 +1,659 @@
+[
+  {
+    "img": "https://i5.walmartimages.com/asr/40574581-c031-46c2-b658-9852a105d4db.f85a635c47c0f4c690846cb146d4bc26.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff",
+    "name": "Wireless Over-Ear Headphones",
+    "price": 79.99,
+    "rating": 4.2,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "img": "https://www.bhphotovideo.com/images/images2500x2500/645087.jpg",
+    "name": "In-Ear Noise-Canceling Earphones",
+    "price": 59.99,
+    "rating": 4.5,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "img": "https://i5.walmartimages.com/asr/c48aa8a1-95bf-4c40-b798-d55eac7eff39_1.098ecde4b7f02c72568e2e00ae8f9864.jpeg",
+    "name": "Bluetooth Sports Earbuds",
+    "price": 39.99,
+    "rating": 4.0,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "img": "headphone_earphone_4.jpg",
+    "name": "Gaming Headset with Mic",
+    "price": 89.99,
+    "rating": 4.7,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "img": "https://i5.walmartimages.com/asr/76f758ca-797f-4425-be5f-fdecae2c927e.2174fdc801ddef0a3e77e0ce32554a50.jpeg",
+    "name": "Foldable On-Ear Headphones",
+    "price": 49.99,
+    "rating": 4.3,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "img": "https://i5.walmartimages.com/asr/35fc938e-559b-40d1-a8e4-c133bfd54ba0_1.03b3695d1c131fdcf9f628cf67633568.jpeg",
+    "name": "True Wireless Stereo Earbuds",
+    "price": 69.99,
+    "rating": 4.6,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "img": "headphone_earphone_7.jpg",
+    "name": "Premium Hi-Fi Over-Ear Headphones",
+    "price": 129.99,
+    "rating": 4.8,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "img": "https://images.monoprice.com/productlargeimages/83234.jpg",
+    "name": "Sweatproof Sports Ear Hook Earphones",
+    "price": 34.99,
+    "rating": 4.1,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "img": "https://lonelybrand.com/wp-content/uploads/2021/04/0003_nuraboost-edge-earbuds-011-5.jpg",
+    "name": "Wireless Gaming Earbuds",
+    "price": 79.99,
+    "rating": 4.4,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "img": "https://media.mydukkan.com/image/28433/OBJE/1b83b15c-37d5-4fd2-9084-2128076f439628433.jpg",
+    "name": "Foldable DJ-Style Headphones",
+    "price": 99.99,
+    "rating": 4.6,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "img": "https://images.reverb.com/image/upload/s--w21w17_j--/f_auto,t_large/v1532628704/cu0szwal6mh1ttofxtek.jpg",
+    "name": "Noise-Isolating In-Ear Monitors",
+    "price": 49.99,
+    "rating": 4.2,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "img": "https://www.rollingstone.com/wp-content/uploads/2020/05/best-waterproof-earbuds.jpg",
+    "name": "Water-Resistant Bluetooth Earbuds",
+    "price": 59.99,
+    "rating": 4.5,
+    "category": "Headphones & Earphones"
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b1139a",
+    "img": "https://cdn-profiles.tunein.com/p2411126/images/logog.png?t=1",
+    "name": "Professional Microphone",
+    "price": 129.99,
+    "rating": 4.5,
+    "category": "Youtube Studio Gear",
+    "available": 25
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b1139b",
+    "img": "https://canon-camera.eu/images/85/8596B055/287a/d/Canon-EOS-700D-EF-S-18-135mm-IS-STM-40mm-STM-11.jpg",
+    "name": "4K HD Camera",
+    "price": 599.99,
+    "rating": 4.2,
+    "category": "Youtube Studio Gear",
+    "available": 99
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b1139c",
+    "img": "https://cdn.shopify.com/s/files/1/2303/2711/products/6-inch-table-clamp-ring-light-workbench-100009_grande.jpg?v=1588216913",
+    "name": "Adjustable Ring Light",
+    "price": 79.99,
+    "rating": 4.7,
+    "category": "Youtube Studio Gear",
+    "available": 65
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b1139d",
+    "img": "studio_gear_4.jpg",
+    "name": "High-Performance Headphones",
+    "price": 149.99,
+    "rating": 4,
+    "category": "Youtube Studio Gear",
+    "available": 40
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b1139e",
+    "img": "https://image-cdn.hypb.st/https://hypebeast.com/image/ht/2013/12/nocs-ns900-review-14.jpg?fit=max&cbr=1&q=90&w=750&h=500",
+    "name": "Camera Tripod Stand",
+    "price": 49.99,
+    "rating": 4.3,
+    "category": "Youtube Studio Gear",
+    "available": 60
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b1139f",
+    "img": "https://www.gravtechnology.com/wp-content/uploads/2020/10/man-5638146_1280.jpg",
+    "name": "Professional Video Editing Software",
+    "price": 199.99,
+    "rating": 4.8,
+    "category": "Youtube Studio Gear",
+    "available": 30
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b113a0",
+    "img": "https://c1.wallpaperflare.com/preview/619/64/62/microphone-micro-recording-sound-thumbnail.jpg",
+    "name": "Wireless Microphone System",
+    "price": 199.99,
+    "rating": 4.5,
+    "category": "Youtube Studio Gear",
+    "available": 190
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b113a1",
+    "img": "https://ecx.images-amazon.com/images/I/51cY3GQW56L.jpg",
+    "name": "Green Screen Kit",
+    "price": 129.99,
+    "rating": 4.2,
+    "category": "Youtube Studio Gear",
+    "available": 150
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b113a2",
+    "img": "https://ecx.images-amazon.com/images/I/51YyMvSYRRL.jpg",
+    "name": "Camera Lens Kit",
+    "price": 89.99,
+    "rating": 4.6,
+    "category": "Youtube Studio Gear",
+    "available": 120
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b113a3",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/7108pkKXJHL._AC_SL1500_.jpg",
+    "name": "LED Video Lighting Kit",
+    "price": 119.99,
+    "rating": 4.4,
+    "category": "Youtube Studio Gear",
+    "available": 80
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b113a4",
+    "img": "https://i5.walmartimages.com/asr/9a9388bc-2524-4e7b-a9b6-4f0ebe68f820_1.d4189a0bccffaa528fa81e9614a1e475.jpeg",
+    "name": "Adjustable Desk Mount for Monitors",
+    "price": 69.99,
+    "rating": 4.1,
+    "category": "Youtube Studio Gear",
+    "available": 50
+  },
+  {
+    "_id": "6596eb9b4e636f24e8b113a5",
+    "img": "https://cdn.windowsreport.com/wp-content/uploads/2018/11/Silicon-Power-Rugged-External-Hard-Drive.jpg",
+    "name": "External Hard Drive for Storage",
+    "price": 89.99,
+    "rating": 4.7,
+    "category": "Youtube Studio Gear",
+    "available": 100
+  },
+  {
+    "img": "https://quillandpad.com/wp-content/uploads/2019/12/Zenith-Chronomaster-2_2.jpg",
+    "name": "ChronoMaster X3000 Series",
+    "price": 299.99,
+    "rating": 4.6,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://www.glamour-diamond.com/wp-content/uploads/2021/12/1NEAS.B02A.C169A-2.jpg",
+    "name": "Elegance Diamond Edition",
+    "price": 599.99,
+    "rating": 4.8,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://i.pinimg.com/originals/74/58/97/745897d8376173e20a9276619364e275.jpg",
+    "name": "Navigator Pro Diver Watch",
+    "price": 129.99,
+    "rating": 4.3,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://i0.wp.com/www.yankodesign.com/images/design_news/2011/01/30/solaris_watch.jpg",
+    "name": "Solaris Smartwatch Series",
+    "price": 199.99,
+    "rating": 4.2,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://cdn-s3.touchofmodern.com/products/002/205/122/41dcf571cab5736df0603b1e1e1d271b_large.jpg?1630016110",
+    "name": "Luxury Heritage Automatic",
+    "price": 899.99,
+    "rating": 4.7,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://i.pinimg.com/originals/5a/81/bd/5a81bd92242db2391ad6d585598f2d1b.png",
+    "name": "Adventure Explorer GMT",
+    "price": 179.99,
+    "rating": 4.4,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://www.lindajewelry.com/image/catalog/easyphoto/4792/sleek-minimalist-stainless-steel-watch-5-variants-4792--836.jpg",
+    "name": "Sleek Minimalist Stainless Steel",
+    "price": 69.99,
+    "rating": 4.5,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://images-na.ssl-images-amazon.com/images/I/916Fqj5lOtL.jpg",
+    "name": "Aviator Pilot Chronograph",
+    "price": 249.99,
+    "rating": 4.6,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://www.biztechpost.com/wp-content/uploads/2018/04/3-scaled.jpg",
+    "name": "Urban Explorer Hybrid Smartwatch",
+    "price": 159.99,
+    "rating": 4.2,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://www.szgiantwatch.com/upload/2017-09/22/919105.jpg",
+    "name": "Classic Heritage Leather Watch",
+    "price": 119.99,
+    "rating": 4.4,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://i.pinimg.com/originals/b8/e8/40/b8e84035fcba11f291110f073b957eae.jpg",
+    "name": "TechMaster Digital Sports Watch",
+    "price": 89.99,
+    "rating": 4.1,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://cdn11.bigcommerce.com/s-bpf02c8y86/images/stencil/2000x2000/products/5231/33683/3433-1-3__56871.1663014086.jpg?c=2",
+    "name": "Moonphase Elegance Rose Gold",
+    "price": 799.99,
+    "rating": 4.9,
+    "category": "Watch Collection"
+  },
+  {
+    "img": "https://luxurylaunches.com/wp-content/uploads/2021/01/LG-InstaView-Refrigerators-2.jpg",
+    "name": "Smart Refrigerator with Touchscreen",
+    "price": 1499.99,
+    "rating": 4.5,
+    "category": "Home Appliances"
+  },
+  {
+    "img": "https://bestdishwasherforthemoney.com/wp-content/uploads/2016/03/LG-LDT9965BD-1024x737.jpg",
+    "name": "UltraQuiet Dishwasher with AI",
+    "price": 899.99,
+    "rating": 4.2,
+    "category": "Home Appliances"
+  },
+  {
+    "img": "https://i.pinimg.com/originals/a2/b0/e5/a2b0e5b008c7d00d85b9cf4ceff16715.jpg",
+    "name": "Premium Espresso Coffee Machine",
+    "price": 299.99,
+    "rating": 4.8,
+    "category": "Home Appliances"
+  },
+  {
+    "img": "https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2020/10/Roborock1.jpg",
+    "name": "Robot Vacuum Cleaner with Mapping",
+    "price": 349.99,
+    "rating": 4.3,
+    "category": "Home Appliances"
+  },
+  {
+    "img": "https://www.lateet.com/wp-content/uploads/2018/11/digital-thermostats-reviews.jpeg",
+    "name": "Smart Thermostat for Climate Control",
+    "price": 129.99,
+    "rating": 4.7,
+    "category": "Home Appliances"
+  },
+  {
+    "img": "https://prosconsshopping.com/wp-content/uploads/2019/03/Gourmia-GAF635-Digital-Air-Fryer-1024x1024.jpg",
+    "name": "Digital Air Fryer with Multiple Modes",
+    "price": 79.99,
+    "rating": 4.6,
+    "category": "Home Appliances"
+  },
+  {
+    "img": "https://cdn.hughes.co.uk/live/media/image/a7/e9/93/lg-f4v910btsek.jpg",
+    "name": "Wi-Fi Connected Washing Machine",
+    "price": 699.99,
+    "rating": 4.4,
+    "category": "Home Appliances"
+  },
+  {
+    "img": "https://d2cdo4blch85n8.cloudfront.net/wp-content/uploads/2020/12/Sharp-Smart-Carousel-Countertop-Microwave-Oven-image-2.jpg",
+    "name": "Smart Microwave Oven with Voice Control",
+    "price": 249.99,
+    "rating": 4.2,
+    "category": "Home Appliances"
+  },
+  {
+    "img": "https://www.honeywellconsumerstore.com/store/images/products/large_images/hpa300-true-hepa-whole-room-air-purifier-with-allergen-remover.jpg",
+    "name": "Portable Air Purifier with HEPA Filter",
+    "price": 159.99,
+    "rating": 4.9,
+    "category": "Home Appliances"
+  },
+  {
+    "img": "https://cdn.nedis.com/images/products_high_res/KAHB400CAL_P75.JPG",
+    "name": "Blender with Variable Speed Settings",
+    "price": 89.99,
+    "rating": 4.1,
+    "category": "Home Appliances"
+  },
+  {
+    "img": "https://ecx.images-amazon.com/images/I/81JpDwqDOnL._SL1500_.jpg",
+    "name": "Digital Rice Cooker with Timer",
+    "price": 49.99,
+    "rating": 4.0,
+    "category": "Home Appliances"
+  },
+  {
+    "img": "https://i5.walmartimages.com/asr/d090254b-0e27-463a-88d6-7d358d6b291e_1.d581d1dd6e5384a2e2bfcc00dfbe3a69.jpeg",
+    "name": "Handheld Steamer for Clothes",
+    "price": 59.99,
+    "rating": 4.6,
+    "category": "Home Appliances"
+  }
+
+
+
+
+
+
+
+
+
+  
+    {
+    "img": "https://i5.walmartimages.com/asr/bbdf1da8-7ad2-451f-bbbf-1de3811829c0.edc4cbc3ed51da7d919fbc34df7b2e3f.jpeg",
+    "name": "RGB Backlit Gaming Keyboard",
+    "price": 79.99,
+    "rating": 4.5,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "https://alexnld.com/wp-content/uploads/2017/05/9a0a0d1d7d7d0a.jpg",
+    "name": "High-Precision Gaming Mouse",
+    "price": 49.99,
+    "rating": 4.2,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "https://www.bhphotovideo.com/images/images2500x2500/Razer_rz04_00600100_r3u1_Sound_Analog_Gaming_Headset_890103.jpg",
+    "name": "Immersive 7.1 Surround Sound Headset",
+    "price": 99.99,
+    "rating": 4.8,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "https://img.goodfon.com/wallpaper/nbig/3/9b/joystick-xbox-wireless-black-controller-xbox-one-xbox-one-el.jpg",
+    "name": "DualShock Elite Wireless Controller",
+    "price": 129.99,
+    "rating": 4.3,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "https://images-na.ssl-images-amazon.com/images/I/71HK-a6kK1L._SL1500_.jpg",
+    "name": "Gaming Mouse Pad with LED Lighting",
+    "price": 29.99,
+    "rating": 4.7,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "https://www.storkz.com/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/s/2/s20695313.jpg",
+    "name": "ProGrip Controller Attachments",
+    "price": 19.99,
+    "rating": 4.6,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "https://i.pinimg.com/originals/78/e8/14/78e81497d128f2d4e66b975f61a8965c.jpg",
+    "name": "Wireless Gaming Headset Stand",
+    "price": 39.99,
+    "rating": 4.4,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "https://images-na.ssl-images-amazon.com/images/I/71KblMu8YIL._AC_SL1500_.jpg",
+    "name": "Adjustable Gaming Chair with Speakers",
+    "price": 199.99,
+    "rating": 4.2,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "https://www.bamdeal.com/wp-content/uploads/2020/11/2020-nexigo-streaming-webcam-with-ring-light-and-dual-microphone-advanced.jpg",
+    "name": "Streaming Webcam with Ring Light",
+    "price": 89.99,
+    "rating": 4.9,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "https://i5.walmartimages.com/asr/6dc436fe-126f-41ce-98aa-2253c966a1c9_1.1e78365e4c6269f2ab6f7aa4826247b6.jpeg",
+    "name": "Gaming Desk with Cable Management",
+    "price": 149.99,
+    "rating": 4.1,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "https://cdn1.thehomeroute.com/wp-content/uploads/2020/09/29014245/drawer.jpg",
+    "name": "Console and Controller Organizer",
+    "price": 34.99,
+    "rating": 4.0,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "http://cdn.mos.cms.futurecdn.net/ajCoRuSAxHR7NRKsa77s28-1200-80.jpg",
+    "name": "RGB Lighting Kit for Gaming Setup",
+    "price": 49.99,
+    "rating": 4.5,
+    "category": "Game Accessories"
+  },
+  {
+    "img": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2017/08/MT2_6231.jpg",
+    "name": "Professional DSLR Camera",
+    "price": 899.99,
+    "rating": 4.7,
+    "category": "Camera"
+  },
+  {
+    "img": "https://i1.wp.com/www.smartprix.com/bytes/wp-content/uploads/2018/06/mejores-camaras-reflex-para-principiantes.jpg?fit=1280%2C720&ssl=1",
+    "name": "Mirrorless Camera with 4K Video",
+    "price": 1299.99,
+    "rating": 4.5,
+    "category": "Camera"
+  },
+  {
+    "img": "https://cdn.mos.cms.futurecdn.net/CKPPoPe5csiiHJAVjci8u4.jpg",
+    "name": "Compact Point-and-Shoot Camera",
+    "price": 399.99,
+    "rating": 4.2,
+    "category": "Camera"
+  },
+  {
+    "img": "https://homedepot.scene7.com/is/image/homedepotcanada/p_1001420718.jpg?wid=1000&hei=1000&op_sharpen=1",
+    "name": "Action Camera with Waterproof Case",
+    "price": 179.99,
+    "rating": 4.8,
+    "category": "Camera"
+  },
+  {
+    "img": "https://i.all3dp.com/wp-content/uploads/2017/10/26235003/360-Round-1.jpg",
+    "name": "360-Degree VR Camera",
+    "price": 599.99,
+    "rating": 4.6,
+    "category": "Camera"
+  },
+  {
+    "img": "https://dwkujuq9vpuly.cloudfront.net/news/wp-content/uploads/2018/07/NikonP1000_MAIN2-1832x1374.jpg",
+    "name": "Bridge Camera with Superzoom",
+    "price": 349.99,
+    "rating": 4.3,
+    "category": "Camera"
+  },
+  {
+    "img": "https://asset.conrad.com/media10/isa/160267/c1/-/en/002235747PI05/image.jpg",
+    "name": "Digital Camcorder with Night Vision",
+    "price": 249.99,
+    "rating": 4.4,
+    "category": "Camera"
+  },
+  {
+    "img": "https://i5.walmartimages.com/asr/20554c31-6dbb-4d47-9ea8-556fda2a34d0.049e8cb2261c1be5757ef48163f24747.jpeg",
+    "name": "Drone with 4K Camera and GPS",
+    "price": 699.99,
+    "rating": 4.1,
+    "category": "Camera"
+  },
+  {
+    "img": "https://www.appliancesdirect.co.uk/Images/4T-C40AJ6KE1FB_2_Supersize.jpg?width=937&height=937&v=4",
+    "name": "Smart 4K UHD LED TV",
+    "price": 699.99,
+    "rating": 4.7,
+    "category": "Television"
+  },
+  {
+    "img": "http://brain-images.cdn.dixons.com/0/7/10160970/u_10160970.jpg",
+    "name": "Curved QLED TV with Dolby Vision",
+    "price": 1299.99,
+    "rating": 4.5,
+    "category": "Television"
+  },
+  {
+    "img": "https://www.techtoyreviews.com/wp-content/uploads/2018/01/Philips-OLED-TV.jpg",
+    "name": "Ultra-Slim OLED TV with HDR10+",
+    "price": 1799.99,
+    "rating": 4.2,
+    "category": "Television"
+  },
+  {
+    "img": "https://api.time.com/wp-content/uploads/2017/05/2-a8c7d541-1b5a-4ae5-adea-9a15c6ca9e7b_1-6bc28af3e0c6de04f52d988ce37fc68e.jpg?quality=85&w=2048",
+    "name": "Budget-Friendly Full HD TV",
+    "price": 399.99,
+    "rating": 4.8,
+    "category": "Television"
+  },
+  {
+    "img": "https://img.global.news.samsung.com/global/wp-content/uploads/2020/06/QLED-TV-Gaming-Interview_main_2-845x563.jpg",
+    "name": "Gaming-Optimized QLED TV",
+    "price": 999.99,
+    "rating": 4.6,
+    "category": "Television"
+  },
+  {
+    "img": "https://m.media-amazon.com/images/I/71hJILxfXML._AC_SS450_.jpg",
+    "name": "High-Performance Gaming PC",
+    "price": 1499.99,
+    "rating": 4.7,
+    "category": "Computer & Office"
+  },
+  {
+    "img": "https://i5.walmartimages.com/asr/aca83959-0244-4e68-a1f0-3d079a44c171.a2e0d7319817e3d43c7ba7bf6e9d8af4.jpeg",
+    "name": "Laptop with Ultra-Slim Design",
+    "price": 999.99,
+    "rating": 4.5,
+    "category": "Computer & Office"
+  },
+  {
+    "img": "https://www.bhphotovideo.com/images/images2500x2500/lenovo_57318980_c355_desktop_computer_1004529.jpg",
+    "name": "All-in-One Desktop Computer",
+    "price": 1299.99,
+    "rating": 4.2,
+    "category": "Computer & Office"
+  },
+  {
+    "img": "https://brandtech.b-cdn.net/wp-content/uploads/2021/05/71LtAoF8IEL._SL1500_.jpg",
+    "name": "Mechanical Gaming Keyboard",
+    "price": 89.99,
+    "rating": 4.8,
+    "category": "Computer & Office"
+  },
+  {
+    "img": "https://www.takeaseat.sg/wp-content/uploads/2021/03/Logitech-MX-Ergo-Vertical-Wireless-Ergonomic-Mouse-3.jpg",
+    "name": "Wireless Ergonomic Mouse",
+    "price": 49.99,
+    "rating": 4.6,
+    "category": "Computer & Office"
+  },
+  {
+    "img": "https://i5.walmartimages.com/asr/e3d7cf83-115a-475e-9133-9e1752a0599d_1.2cb29c753706661ac4e5277bfd62fd0c.jpeg",
+    "name": "Dual Monitor Stand with Adjustable Arms",
+    "price": 79.99,
+    "rating": 4.3,
+    "category": "Computer & Office"
+  },
+  {
+    "img": "https://www.bhphotovideo.com/images/images2000x2000/brother_hl_3140cw_digital_color_printer_with_945220.jpg",
+    "name": "Color Laser Printer with Wi-Fi",
+    "price": 299.99,
+    "rating": 4.4,
+    "category": "Computer & Office"
+  },
+  {
+    "img": "https://images-na.ssl-images-amazon.com/images/I/61JNdvOGJ4L._AC_SL1200_.jpg",
+    "name": "Noise-Canceling Bluetooth Headset",
+    "price": 129.99,
+    "rating": 4.1,
+    "category": "Computer & Office"
+  },
+  {
+    "img": "https://www.cclonline.com/images/avante/PA32UCX-K_R.jpg?width=1600&height=1600",
+    "name": "UltraHD IPS Monitor",
+    "price": 399.99,
+    "rating": 4.9,
+    "category": "Computer & Office"
+  },
+  {
+    "img": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/11/2017/04/DSC9541.jpg",
+    "name": "Mountain Bike with Suspension",
+    "price": 699.99,
+    "rating": 4.7,
+    "category": "Bicycle & Accessories"
+  },
+  {
+    "img": "https://ae01.alicdn.com/kf/HTB1TRFJCVuWBuNjSszbq6AS7FXaK/T1000-Full-Carbon-Fiber-Road-Bike-Frame-Super-Light-Road-Bicycle-Fame-FM008-Glossy-AVENGER-Painting.jpg",
+    "name": "Road Bike with Carbon Frame",
+    "price": 1299.99,
+    "rating": 4.5,
+    "category": "Bicycle & Accessories"
+  },
+  {
+    "img": "https://cdn.thewirecutter.com/wp-content/media/2021/06/hybridbikes-2048px-2716.jpg",
+    "name": "Hybrid Commuter Bike",
+    "price": 499.99,
+    "rating": 4.2,
+    "category": "Bicycle & Accessories"
+  },
+  {
+    "img": "https://images-na.ssl-images-amazon.com/images/I/61ds1f5gSUL.jpg",
+    "name": "Adjustable Bike Helmet",
+    "price": 59.99,
+    "rating": 4.8,
+    "category": "Bicycle & Accessories"
+  },
+  {
+    "img": "http://allthingsd.com/files/2013/02/IMG_0056.jpg",
+    "name": "Flagship Android Smartphone",
+    "price": 899.99,
+    "rating": 4.7,
+    "category": "Mobile"
+  },
+  {
+    "img": "https://www.crocodile-bag.com/wp-content/uploads/2020/08/iPhone-12.jpg",
+    "name": "iPhone Pro Max with 5G",
+    "price": 1299.99,
+    "rating": 4.5,
+    "category": "Mobile"
+  },
+  {
+    "img": "https://www.ephotozine.com/articles/top-10-best-mid-range-smartphones-for-photography-2021-33058/images/xlg_1000-PA220055_1603364603.jpg",
+    "name": "Mid-Range Camera Phone",
+    "price": 499.99,
+    "rating": 4.2,
+    "category": "Mobile"
+  }
+]
