@@ -61,7 +61,7 @@ const page = async () => {
 
 
             {/* Youtube studio related product collections */}
-            <div className=' w-full grid mdgrid-rows-5 md:grid-cols-2   lg:grid-rows-3 lg:grid-cols-3  gap-20   '>
+            <div className=' w-full grid md:grid-rows-5 md:grid-cols-2   lg:grid-rows-3 lg:grid-cols-3  gap-3   '>
 
                 {
                     bicycleData.map(item => <Card

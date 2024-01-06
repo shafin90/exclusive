@@ -4,7 +4,7 @@
   }
 
   .flash_Sale_Container{
-    height: 450px;
+    height: 500px;
   }
 
   /* .flash_Sale_Container{
@@ -16,7 +16,7 @@
   }
   @media screen and (max-width:1025px) {
     .flash_Sale_Container{
-      height: 450px;
+      height: 500px;
     } 
   }
 

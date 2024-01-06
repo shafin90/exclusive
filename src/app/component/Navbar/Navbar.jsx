@@ -5,17 +5,20 @@ import { IoIosSearch } from "react-icons/io";
 import { TbJewishStar } from "react-icons/tb";
 import { IoCartOutline } from "react-icons/io5";
 import { SlLogin } from "react-icons/sl";
+import { useRouter } from 'next/navigation';
+import { useSelector } from 'react-redux';
 
 
 const Navbar = () => {
     const [windowWidth, setWindowWidth] = useState(null);
-   
+    const products = useSelector((state) => state.productList.value)
+
+
     useEffect(() => {
         setWindowWidth(window.innerWidth);
-     
     }, [])
 
-  
+    const router = useRouter();
 
     return (
         <div className=' flex justify-between items-center w-5/6 mx-auto mt-8 mb-6'>
@@ -40,7 +43,7 @@ const Navbar = () => {
             {/* Searchbar and wishlist========= */}
             <div className=' sm:w-8/12 md:w-8/12 xl:w-5/12 2xl:w-5/12 flex justify-between items-center'>
                 {/* Input field and search icon */}
-                <div style={{ border:"1px solid black"}} className=' bg-transparent  flex justify-content-between  items-center w-8/12'>
+                <div style={{ border: "1px solid black" }} className=' bg-transparent  flex justify-content-between  items-center w-8/12'>
 
                     <input
                         type="text"
@@ -52,8 +55,23 @@ const Navbar = () => {
 
                 {/* wish icon and cart icon container div */}
                 <div className='w-3/12 flex justify-between items-center'>
-                    <TbJewishStar className=' text-xl relative right-2  hover:rotate-90 transition-all hover:scale-125 cursor-pointer' />
-                    <IoCartOutline className=' text-2xl  hover:scale-125 transition-all cursor-pointer' />
+                    {/* wish icon */}
+
+                    <TbJewishStar
+                        onClick={() => router.push('/wish')}
+                        className=' text-xl relative right-2  hover:rotate-90 transition-all hover:scale-125 cursor-pointer' />
+
+                    {/* cart icon */}
+                    <div className=' relative'>
+                        <span
+                            style={{ fontSize: "10px", top: "-8px", right: "-8px", display: products.length === 0 && "none" }}
+                            className=' absolute text-white bg-black w-4 h-4 rounded-full flex justify-center items-center'>{products.length}</span>
+                        <IoCartOutline
+                            onClick={() => router.push('/cart')}
+                            className=' text-2xl  hover:scale-125 transition-all cursor-pointer' />
+                    </div>
+
+                    {/* login logout */}
                     <SlLogin className=' text-2xl  hover:scale-125 transition-all cursor-pointer' />
                 </div>
             </div>

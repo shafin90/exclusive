@@ -1,18 +1,27 @@
-
+'use client'
 import React from 'react';
-
 import StarRating from "@/app/component/StarRating/StarRating";
 import CardImage from '../CardImage/CardImage';
+import { useRouter } from 'next/navigation';
+import { useDispatch } from 'react-redux';
+import {zero} from '@/redux/counterSlice/counterSlice'
 
-const Card = ({ BestSellingProducts, img, cardHeading, price, rating, availabe }) => {
+const Card = ({ BestSellingProducts, img, cardHeading, price, rating, availabe, id }) => {
+    const router = useRouter()
+    const dispatch = useDispatch()
+
     return (
         <div
             style={{ border: "2px solid #f3f4f6" }}
             className={BestSellingProducts ? ' overflow-hidden mt-10 lg:mt-0 w-100 bg-gray-100 pb-10' : ' mt-10 lg:mt-0 w-100 bg-gray-100 pb-10 overflow-hidden'} >
-           
+
             {/* card image container */}
             <div className=' w-full h-72'>
-                <CardImage img={img?img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS46OiS9co1oXup4UMf-NjtXAwJ1ewECm5nWl6n6Zd5yfvL4UM1byEtXo6ZjaVy-pXzb6ZSOXzjg3fJYViKHDBo8mCvxEtzgmFF5HtjHUGAdp9cu0LEDO3_Tued_66QEiIkDVPyZsRaWjI1Myf8kMRzjWnsdi3lCW_hvfD5KK4GeQ825iCpNVRFATU/s1920/Dark%20Winds%20Tv%20Series.jpg"}></CardImage>
+                <CardImage
+                    id={id}
+                    price={price}
+                    name={cardHeading}
+                    img={img ? img : "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS46OiS9co1oXup4UMf-NjtXAwJ1ewECm5nWl6n6Zd5yfvL4UM1byEtXo6ZjaVy-pXzb6ZSOXzjg3fJYViKHDBo8mCvxEtzgmFF5HtjHUGAdp9cu0LEDO3_Tued_66QEiIkDVPyZsRaWjI1Myf8kMRzjWnsdi3lCW_hvfD5KK4GeQ825iCpNVRFATU/s1920/Dark%20Winds%20Tv%20Series.jpg"}></CardImage>
             </div>
 
             {/* Card heading */}
@@ -32,6 +41,17 @@ const Card = ({ BestSellingProducts, img, cardHeading, price, rating, availabe }
                     {availabe ? availabe : "90"}
                 </p>
             </div>
+
+            <button
+                style={{ border: "1px solid black" }}
+                className='transition-all bg-black px-5 py-2 text-white ms-3 mt-3 hover:text-black hover:bg-gray-100'
+                onClick={() => {
+                    router.push(`/${id}`)
+                    dispatch(zero())
+                }}>
+                Details
+            </button>
+
         </div>
     );
 };
