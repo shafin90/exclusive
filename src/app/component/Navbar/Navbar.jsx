@@ -72,7 +72,9 @@ const Navbar = () => {
                     </div>
 
                     {/* login logout */}
-                    <SlLogin className=' text-2xl  hover:scale-125 transition-all cursor-pointer' />
+                    <SlLogin 
+                    onClick={()=>{router.push('/registerPage')}}
+                    className=' text-2xl  hover:scale-125 transition-all cursor-pointer' />
                 </div>
             </div>
         </div>
