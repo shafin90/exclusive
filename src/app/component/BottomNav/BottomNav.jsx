@@ -6,15 +6,12 @@ import { GoHome } from "react-icons/go";
 import { LuContact } from "react-icons/lu";
 import { MdConnectWithoutContact } from "react-icons/md";
 import Link from 'next/link';
+import './BottomNav.css'
 
 const BottomNav = () => {
     const [isHidden, setIsHidden] = useState(false);
-    const [screenWidth, setScreenWidth] = useState(null)
-
-
-
-    useEffect(() => {
-        setScreenWidth(window.innerWidth);
+   
+    useEffect(() => {   
         const handleScroll = () => {
             const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
@@ -35,10 +32,9 @@ const BottomNav = () => {
         };
     }, []);
 
-    const navStyle = isHidden ? 'hidden' : screenWidth<1030 ?'flex':'hidden';
 
     return (
-        <div className={`bg-black w-screen sticky bottom-0 ${navStyle} justify-between items-center py-4`}>
+        <div className={!isHidden?`bg-black w-screen sticky bottom-0 bottomNav justify-between items-center py-4`:'none'}>
             <div className=' w-9/12 mx-auto flex justify-between items-center'>
                 <Link href="/mobieMenu" className=" text-white">
                     <IoReorderThreeOutline className=' text-4xl' />

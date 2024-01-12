@@ -1,0 +1,9 @@
+.bottomNav {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .bottomNav {
+        display: block;
+    }
+}
