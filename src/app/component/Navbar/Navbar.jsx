@@ -6,19 +6,34 @@ import { TbJewishStar } from "react-icons/tb";
 import { IoCartOutline } from "react-icons/io5";
 import { SlLogin } from "react-icons/sl";
 import { useRouter } from 'next/navigation';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { BiSolidLogOut } from "react-icons/bi";
+import { addUser } from '../../../redux/userSlice/userSlice'
+import { getAuth, signOut } from "firebase/auth";
+import { app } from '../../../../firebase.config';
 
+const auth = getAuth(app);
 
 const Navbar = () => {
     const [windowWidth, setWindowWidth] = useState(null);
     const products = useSelector((state) => state.productList.value)
-
+    const user = useSelector((state) => state.user.value)
+    const dispatch = useDispatch()
 
     useEffect(() => {
         setWindowWidth(window.innerWidth);
     }, [])
 
     const router = useRouter();
+
+    // Logout function
+    const handleLogout = () => {
+        signOut(auth).then(() => {
+            dispatch(addUser(null))
+        }).catch((error) => {
+            alert("problem facing while logout")
+        });
+    }
 
     return (
         <div className=' flex justify-between items-center w-5/6 mx-auto mt-8 mb-6'>
@@ -71,10 +86,16 @@ const Navbar = () => {
                             className=' text-2xl  hover:scale-125 transition-all cursor-pointer' />
                     </div>
 
-                    {/* login logout */}
-                    <SlLogin 
-                    onClick={()=>{router.push('/registerPage')}}
-                    className=' text-2xl  hover:scale-125 transition-all cursor-pointer' />
+                    {/* login logout = if user available, then logout button, otherwise login================================*/}
+                    {/* 1. login button */}
+                    <SlLogin
+                        onClick={() => { router.push('/registerPage') }}
+                        className={user ? "hidden" : 'text-2xl  hover:scale-125 transition-all cursor-pointer'} />
+
+                    {/*2. logout button login logout */}
+                    <BiSolidLogOut
+                        onClick={handleLogout}
+                        className={user ? 'text-2xl  hover:scale-125 transition-all cursor-pointer' : "hidden"} />
                 </div>
             </div>
         </div>
