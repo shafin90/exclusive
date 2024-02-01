@@ -3,17 +3,22 @@ import { useRouter } from 'next/navigation';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { add } from '@/redux/productListSlice/productListSlice'
-
+import { addPrice } from '@/redux/totalPriceSlice/totalPriceSlice'
 
 const BuyNowBtn = ({ product }) => {
     const router = useRouter();
     const dispatch = useDispatch()
     const count = useSelector((state) => state.counter.value)
-    console.log(count)
+
     return (
         <button
             onClick={() => {
                 router.push("/checkOut")
+                
+                // Dispatching addPrice reducer to make totalprice
+                dispatch(addPrice((product.price*count).toFixed(2)))
+
+                // Dispatching add reducer from prodcutListSlice to add product  
                 dispatch(add({
                     id: product._id,
                     name: product.name, 

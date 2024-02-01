@@ -2,13 +2,14 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { remove } from '@/redux/productListSlice/productListSlice'
+import { useRouter } from 'next/navigation';
 
 
 const page = () => {
-    const [numberOfProduct, setNumberOfProduct] = useState(1);
+
     const products = useSelector((state) => state.productList.value)
     const dispatch = useDispatch()
-
+    const router = useRouter();
     return (
         <div className=' mx-auto w-5/6 mt-14'>
             {/* Product list */}
@@ -27,7 +28,7 @@ const page = () => {
 
                     {/* price and cross button */}
                     <div className=' flex justify-end items-center'>
-                        <p className=' text-sm me-3'>${(numberOfProduct * item.price).toFixed(2)}</p>
+                        <p className=' text-sm me-3'>${(item.price).toFixed(2)}</p>
 
                         <button
                             onClick={() => dispatch(remove(item.id))}
@@ -42,7 +43,7 @@ const page = () => {
             {/* Checkout button */}
             <div className=' flex justify-center items-center mt-8'>
                 <button
-
+                    onClick={()=>router.push('/checkOut')}
                     style={{ border: "1px solid black" }}
                     className=' px-5 py-3 bg-black hover:bg-white text-white hover:text-black transition-all cursor-pointer'>
                     CheckOut Page

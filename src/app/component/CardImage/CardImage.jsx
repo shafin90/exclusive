@@ -4,12 +4,13 @@ import { TbJewishStar } from 'react-icons/tb';
 import { useDispatch } from 'react-redux'
 import { add } from '@/redux/productListSlice/productListSlice'
 import { addToWishList } from "@/redux/wishListSlice/wishListSlice"
+import { addPrice } from '@/redux/totalPriceSlice/totalPriceSlice'
 
 const CardImage = ({ img, name, id, price, rating, available }) => {
 
     const [isHover, setIsHover] = useState(true)
     const dispatch = useDispatch()
-
+    
     return (
         <div
             onMouseEnter={() => setIsHover(false)}
@@ -25,12 +26,18 @@ const CardImage = ({ img, name, id, price, rating, available }) => {
 
             {/* wish icon */}
             <TbJewishStar
-                onClick={()=>dispatch(addToWishList({img, name, id, price})) }
+                onClick={() => dispatch(addToWishList({ img, name, id, price }))}
                 className='text-2xl absolute top-4 bg-white rounded-full w-9 h-9 p-1 text-black cursor-pointer right-3 hover:rotate-90 transition-all hover:scale-125 hover:bg-black hover:text-white' />
 
             {/* Add to cart lebel */}
             <div style={{ width: "100%" }}
-                onClick={() => { dispatch(add({ id, img, name, price, count: 1 })) }}
+                onClick={() => {
+                    //  Dispatching add reducer from productListSlice to add product in add to cart
+                    dispatch(add({ id, img, name, price, count: 1 }))
+
+                    // Dispatching addprice reducer from totalPriceSlice to make total price
+                    dispatch(addPrice(price))
+                }}
                 className={
                     isHover
                         ?
