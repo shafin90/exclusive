@@ -9,7 +9,8 @@ export const totalPriceSlice = createSlice({
   initialState,
   reducers: {
     addPrice: (state,action) => {
-      state.value += action.payload
+      state.value += action.payload 
+      console.log(action.payload)
     },
     reducePrice: (state, action) => {
       state.value -= action.payload

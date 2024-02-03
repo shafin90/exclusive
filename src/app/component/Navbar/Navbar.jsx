@@ -25,7 +25,7 @@ const Navbar = () => {
     }, [])
 
     const router = useRouter();
-
+   
     // Logout function
     const handleLogout = () => {
         signOut(auth).then(() => {
@@ -43,15 +43,15 @@ const Navbar = () => {
             {/* menubar========== */}
             <ul className={windowWidth > 1024 ? 'flex justify-between items-center xl:w-3/12 2xl:w-3/12' : "hidden"} >
                 <li>
-                    <Link href="/" className=' font-semibold'>Home</Link>
+                    <Link href="/" className='font-semibold hover:border-b-2 border-black pb-1'>Home</Link>
                 </li>
 
                 <li>
-                    <Link href="" className=' font-semibold'>Contact</Link>
+                    <Link href="/contactUs" className=' font-semibold hover:border-b-2 border-black pb-1'>Contact</Link>
                 </li>
 
                 <li>
-                    <Link href="" className=' font-semibold'>About Us</Link>
+                    <Link href="/aboutUs" className=' font-semibold hover:border-b-2 border-black pb-1'>About Us</Link>
                 </li>
             </ul>
 

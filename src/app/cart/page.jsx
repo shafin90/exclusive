@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { remove } from '@/redux/productListSlice/productListSlice'
+import {reducePrice} from "@/redux/totalPriceSlice/totalPriceSlice"
 import { useRouter } from 'next/navigation';
 
 
@@ -31,7 +32,15 @@ const page = () => {
                         <p className=' text-sm me-3'>${(item.price).toFixed(2)}</p>
 
                         <button
-                            onClick={() => dispatch(remove(item.id))}
+                            onClick={() =>{ 
+                                //  dispatching remove reducer from productListSlice to remove product item from the list 
+                                dispatch(remove(item.id))
+
+                                // dispatching reducePrice reducer from totalPriceSlice to reduce total price as the product is being deleted
+                                dispatch(reducePrice(item.price))
+                                console.log(item.price)
+        
+                            }}
                             className=' text-2xl transition-all hover:rotate-180 cursor-pointer'>
                             X
                         </button>

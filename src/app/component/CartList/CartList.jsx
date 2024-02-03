@@ -2,11 +2,12 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { remove } from '@/redux/productListSlice/productListSlice'
+import {reducePrice} from "@/redux/totalPriceSlice/totalPriceSlice"
 
 const CartList = () => {
     const products = useSelector((state) => state.productList.value);
     const dispatch = useDispatch()
-    console.log(products)
+    
     return (
         <div className=' overflow-y-scroll border p-4 '>
             <div className=' h-96'>
@@ -36,7 +37,14 @@ const CartList = () => {
 
                             {/* cross button to cancel the product */}
                             <button
-                                onClick={() => dispatch(remove(product.id))}
+                                onClick={() => {
+                                    // dispatching remove reducer from productListSlice to remove item from the list
+                                    dispatch(remove(product.id))
+                                    
+                                    // dispatching reducePrice reducer from totalPriceSlice to reduce total price as the product is being deleted
+                                    dispatch(reducePrice(product.price))
+                                    console.log(product.price)
+                                }}
                                 className=' text-2xl hover:rotate-180 transition-all cursor-pointer'>
                                 x
                             </button>

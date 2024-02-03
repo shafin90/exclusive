@@ -9,7 +9,7 @@ const stripePromise = loadStripe("pk_test_51OY48pCg3UF6njdMXYwA7KnDAXPU64Spvu2xd
 
 export default function Checkout() {
   return (
-    <div className=' w-3/12 mx-auto mt-24'>
+    <div className=' w-full md:w-7/12 mx-auto mt-24'>
       <Elements stripe={stripePromise}>
         <CheckoutForm />
       </Elements>

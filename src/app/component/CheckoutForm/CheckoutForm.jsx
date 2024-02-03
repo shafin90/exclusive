@@ -1,11 +1,17 @@
 // components/CheckoutForm.js
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
+import axios from 'axios'; // Import axios
+import { useRouter } from 'next/navigation';
 
 const CheckoutForm = () => {
   const stripe = useStripe();
   const elements = useElements();
   const [loading, setLoading] = useState(false);
+  const totalPriceAmount = useSelector((state) => state.totalPrice.value);
+  const router = useRouter();
+
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -26,30 +32,51 @@ const CheckoutForm = () => {
     if (error) {
       console.error(error);
     } else {
-      // Send paymentMethod.id to your server
+      // Send paymentMethod.id to your server using axios
       const { id } = paymentMethod;
-      const response = await fetch('/api/stripe', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ amount: 1000, currency: 'usd', paymentMethodId: id }),
-      });
+      try {
 
-      const data = await response.json();
-      console.log(data);
+        const response = await fetch('/api/stripe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            amount: Math.round(totalPriceAmount * 100),
+            currency: 'usd',
+            paymentMethodId: id,
+          }),
+        });
 
-      // Handle the response from your server
+
+        const data = await response.json();
+
+
+        if (data.clientSecret) {
+          router.push('/')
+          console.log("done")
+        } else {
+          alert('Something went wrong. Try again.');
+        }
+
+        console.log("This is the data", data);
+        // Handle the response from your server
+      } catch (error) {
+        console.error('Axios error:', error);
+        alert('Something went wrong with the payment. Try again later.');
+      }
     }
   };
 
+
   return (
     <form onSubmit={handleSubmit}>
-      <CardElement />
+      <CardElement className='border py-5 px-5' />
+      <h1 className='font-bold text-2xl mt-5'>Total Amount: {totalPriceAmount}</h1>
       <button
-        style={{ border: "1px solid black" }}
-        type="submit" 
-        className=' mt-5 hover:bg-white hover:text-black cursor-pointer transition-all px-10 py-3 bg-black text-white' 
+        style={{ border: '1px solid black' }}
+        type='submit'
+        className='mt-5 hover:bg-white hover:text-black cursor-pointer transition-all px-10 py-3 bg-black text-white'
         disabled={loading}>
         Pay
       </button>
