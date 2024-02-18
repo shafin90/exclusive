@@ -7,10 +7,16 @@ import { useSelector } from 'react-redux'
 
 const page = () => {
     const router = useRouter();
-    
+
+    const user = useSelector((state) => state.user.value)
+
+    if (!user) {
+        router.push("/")
+    }
+
     // taking total price amount from totalPriceSlice --------------------
     const totalPrice = useSelector((state) => state.totalPrice.value)
-    
+
     return (
         <div className=' mx-auto w-5/6 my-20'>
 
@@ -97,7 +103,7 @@ const page = () => {
 
                     {/* order button */}
                     <button
-                        onClick={()=>router.push('/payment') }
+                        onClick={() => router.push('/payment')}
                         style={{ border: "1px solid black" }}
                         className=' px-5 py-2 bg-black hover:bg-white text-white hover:text-black cursor-pointer transition-all'>
                         Place Order

@@ -9,6 +9,7 @@ import BuyNowBtn from '../component/BuyNowBtn/BuyNowBtn';
 
 const page = async ({ params }) => {
 
+    
     // fetching all data
     const response = await axios.get("http://localhost:3000/api/products");
     const allData = response.data; // get all the data
@@ -18,6 +19,7 @@ const page = async ({ params }) => {
 
     // All products of this category
     const allProductsOfThisCategory = await allData.filter(item => item?.category === product?.category)
+
 
 
     return (
@@ -72,9 +74,7 @@ const page = async ({ params }) => {
                             <BuyNowBtn product={product}></BuyNowBtn>
                         </div>
                     </div>
-
                 </div>
-
             </div>
 
             <hr />

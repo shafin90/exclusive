@@ -10,8 +10,7 @@ export const userSlice = createSlice({
     reducers: {
         addUser: (state, action) => {
             state.value = action.payload
-        },
-        
+        },        
     },
 })
 
