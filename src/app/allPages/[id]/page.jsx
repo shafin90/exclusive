@@ -1,11 +1,11 @@
 
 import axios from 'axios';
 import React from 'react';
-import StarRating from '../component/StarRating/StarRating';
+import StarRating from '@/app/component/StarRating/StarRating';
 import { TbJewishStar } from 'react-icons/tb';
-import Counter from '../component/Counter/Counter';
-import Card from '../component/Card/Card';
-import BuyNowBtn from '../component/BuyNowBtn/BuyNowBtn';
+import Counter from '@/app/component/Counter/Counter';
+import Card from '@/app/component/Card/Card';
+import BuyNowBtn from '@/app/component/BuyNowBtn/BuyNowBtn';
 
 const page = async ({ params }) => {
 

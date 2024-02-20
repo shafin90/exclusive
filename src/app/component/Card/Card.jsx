@@ -1,21 +1,17 @@
-'use client'
 import React from 'react';
 import StarRating from "@/app/component/StarRating/StarRating";
 import CardImage from '../CardImage/CardImage';
-import { useRouter } from 'next/navigation';
-import { useDispatch } from 'react-redux';
-import {zero} from '@/redux/counterSlice/counterSlice'
+import { zero } from '@/redux/counterSlice/counterSlice'
+import DetailsBtnForCard from '../DetailsBtnForCard/DetailsBtnForCard';
 
 const Card = ({ BestSellingProducts, img, cardHeading, price, rating, availabe, id }) => {
-    const router = useRouter()
-    const dispatch = useDispatch()
 
     return (
         <div
             style={{ border: "2px solid #f3f4f6" }}
             className={BestSellingProducts ? ' overflow-hidden mt-10 lg:mt-0 w-100 bg-gray-100 pb-10' : ' mt-10 lg:mt-0 w-100 bg-gray-100 pb-10 overflow-hidden'} >
 
-            {/* card image container */}
+            {/* card image container =================*/}
             <div className=' w-full h-72'>
                 <CardImage
                     id={id}
@@ -24,17 +20,18 @@ const Card = ({ BestSellingProducts, img, cardHeading, price, rating, availabe, 
                     img={img ? img : "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS46OiS9co1oXup4UMf-NjtXAwJ1ewECm5nWl6n6Zd5yfvL4UM1byEtXo6ZjaVy-pXzb6ZSOXzjg3fJYViKHDBo8mCvxEtzgmFF5HtjHUGAdp9cu0LEDO3_Tued_66QEiIkDVPyZsRaWjI1Myf8kMRzjWnsdi3lCW_hvfD5KK4GeQ825iCpNVRFATU/s1920/Dark%20Winds%20Tv%20Series.jpg"}></CardImage>
             </div>
 
-            {/* Card heading */}
+            {/* Card heading =========================*/}
             <h1 className='font-bold my-1 text-lg ms-4 mt-3'>
                 {cardHeading ? cardHeading : "Gaming Console"}
             </h1>
 
-            {/* Price */}
+
+            {/* Price ===================================*/}
             <p className='text-sm ms-4 '>
                 {price ? price : "120"}$
             </p>
 
-            {/* Star rating */}
+            {/* Star rating ========================*/}
             <div className='ms-4 flex justify-start items-center'>
                 <StarRating ratings={rating ? rating : 3.5}></StarRating>
                 <p className=' text-slate-800 ms-3 mt-2'>
@@ -42,15 +39,10 @@ const Card = ({ BestSellingProducts, img, cardHeading, price, rating, availabe, 
                 </p>
             </div>
 
-            <button
-                style={{ border: "1px solid black" }}
-                className='transition-all bg-black px-5 py-2 text-white ms-3 mt-3 hover:text-black hover:bg-gray-100'
-                onClick={() => {
-                    router.push(`/${id}`)
-                    dispatch(zero())
-                }}>
-                Details
-            </button>
+            {/* Details Button========================= */}
+            <DetailsBtnForCard
+                pathName={`/allPages/${id}`}
+            ></DetailsBtnForCard>
 
         </div>
     );

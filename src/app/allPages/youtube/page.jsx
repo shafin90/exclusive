@@ -8,9 +8,21 @@ const page = async () => {
     const response = await axios.get("http://localhost:3000/api/products");
     const allData = response.data; // get all the data
 
-    const youtubeData = allData.filter(item => item.category === "Youtube Studio Gear");// get all youtube related products
+    let youtubeData = allData.filter(item => item.category === "Youtube Studio Gear");// get all youtube related products
 
+    // assending order functiuon
+    const makeTheListAssending = (list) => {
+    }
 
+    // Dissending order functiuon
+    const makeTheListDissending = (list) => {
+
+    }
+
+    // price range functiuon
+    const setPriceRange = (lowerLimit, upperLimit) => {
+
+    }
 
     return (
         <div className=' w-10/12 mx-auto mt-14'>
@@ -46,7 +58,9 @@ const page = async () => {
                 <div className=' flex justify-end items-center'>
                     <select className=' outline-none border px-4 py-3'>
                         {/* ascending order */}
-                        <option value="ascending" className=' hover:bg-black cursor-pointer'>
+                        <option
+                            value="ascending"
+                            className=' hover:bg-black cursor-pointer'>
                             Ascending
                         </option>
 
