@@ -5,6 +5,7 @@
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { zero } from '@/redux/counterSlice/counterSlice'
 
 const DetailsBtnForCard = ({pathName}) => {
     

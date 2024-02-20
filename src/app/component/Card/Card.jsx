@@ -1,7 +1,6 @@
 import React from 'react';
 import StarRating from "@/app/component/StarRating/StarRating";
 import CardImage from '../CardImage/CardImage';
-import { zero } from '@/redux/counterSlice/counterSlice'
 import DetailsBtnForCard from '../DetailsBtnForCard/DetailsBtnForCard';
 
 const Card = ({ BestSellingProducts, img, cardHeading, price, rating, availabe, id }) => {
