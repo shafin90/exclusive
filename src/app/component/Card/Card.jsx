@@ -3,7 +3,8 @@ import StarRating from "@/app/component/StarRating/StarRating";
 import CardImage from '../CardImage/CardImage';
 import DetailsBtnForCard from '../DetailsBtnForCard/DetailsBtnForCard';
 
-const Card = ({ BestSellingProducts, img, cardHeading, price, rating, availabe, id }) => {
+const Card = ({ BestSellingProducts, img, cardHeading, price, rating, id }) => {
+
 
     return (
         <div
@@ -33,9 +34,7 @@ const Card = ({ BestSellingProducts, img, cardHeading, price, rating, availabe, 
             {/* Star rating ========================*/}
             <div className='ms-4 flex justify-start items-center'>
                 <StarRating ratings={rating ? rating : 3.5}></StarRating>
-                <p className=' text-slate-800 ms-3 mt-2'>
-                    {availabe ? availabe : "90"}
-                </p>
+              
             </div>
 
             {/* Details Button========================= */}

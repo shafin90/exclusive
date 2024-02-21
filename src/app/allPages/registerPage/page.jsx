@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import Register from '../component/Register/Register';
+import Register from '@/app/component/Card/Card';
 
 const page = () => {
     return (

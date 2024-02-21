@@ -10,10 +10,9 @@ import axios from 'axios';
 
 const FlashSales = async () => {
 
+    //  Fetching all products from server ==================================================
     const response = await axios.get("http://localhost:3000/api/products");
     const allData = response.data; // get all the data
-
-
 
     return (
         <div style={{ borderBottom: "0.5px solid #b3b3b3" }} className=' w-auto mx-auto  pb-20  mb-20'>

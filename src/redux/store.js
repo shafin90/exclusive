@@ -11,7 +11,7 @@ export const store = configureStore({
     productList: productListSlice, 
     wishList: wishListSlice,
     user: userSlice ,
-    totalPrice : totalPriceSlice
+    totalPrice : totalPriceSlice,
   },
   
 })

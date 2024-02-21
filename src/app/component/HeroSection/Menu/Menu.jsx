@@ -20,66 +20,66 @@ const Menu = () => {
         <div className=' hidden lg:block  w-3/12 border-r'>
             <ul>
                 <li
-                    onClick={() => router.push("/youtube")}
+                    onClick={() => router.push("/allPages/youtube")}
                     className='cursor-pointer hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all'>
                     <TfiYoutube className='text-2xl me-2' />
-                    <Link href="/youtube">Youtube Studio Gears</Link>
+                    <Link href="/allPages/youtube">Youtube Studio Gears</Link>
                 </li>
 
                 <li
-                    onClick={() => router.push("/headPhone")}
+                    onClick={() => router.push("/allPages/headPhone")}
                     className='cursor-pointer hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all'>
                     <FaHeadphones className='text-xl me-3' />
-                    <Link href="/headPhone">HeadPhone & EarPhone</Link>
+                    <Link href="/allPages/headPhone">HeadPhone & EarPhone</Link>
                 </li>
 
                 <li
-                    onClick={() => router.push("/watch")}
+                    onClick={() => router.push("/allPages/watch")}
                     className='cursor-pointer hover:ps-2 flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all'>
                     <IoWatchOutline className='text-xl me-3' />
-                    <Link href="/watch">Watch Collection</Link>
+                    <Link href="/allPages/watch">Watch Collection</Link>
                 </li>
 
                 <li
-                    onClick={() => router.push("/homeApplicance")}
+                    onClick={() => router.push("/allPages/homeApplicance")}
                     className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <MdOutlineAddHomeWork className='text-xl me-3' />
-                    <Link href="/homeApplicance">Home Appliances</Link>
+                    <Link href="/allPages/homeApplicance">Home Appliances</Link>
                 </li>
 
                 <li
-                    onClick={() => router.push("/game")}
+                    onClick={() => router.push("/allPages/game")}
                     className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <IoGameControllerSharp className='text-xl me-3' />
-                    <Link href="/game">Game</Link>
+                    <Link href="/allPages/game">Game</Link>
                 </li>
 
                 <li
-                    onClick={() => router.push("/camera")}
+                    onClick={() => router.push("/allPages/camera")}
                     className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <FaCameraRetro className='text-xl me-3' />
-                    <Link href="/camera">Camera</Link>
+                    <Link href="/allPages/camera">Camera</Link>
                 </li>
 
                 <li
-                    onClick={() => router.push("/telivision")}
+                    onClick={() => router.push("/allPages/telivision")}
                     className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <LuMonitor className='text-xl me-3' />
-                    <Link href="telivision">Telivishion</Link>
+                    <Link href="/allPages/telivision">Telivishion</Link>
                 </li>
 
                 <li
-                    onClick={() => router.push("/computer")}
+                    onClick={() => router.push("/allPages/computer")}
                     className='cursor-pointer flex justify-start items-center py-4 border-b  bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <FaComputer className='text-xl me-3' />
-                    <Link href="/computer">Computer & Office</Link>
+                    <Link href="/allPages/computer">Computer & Office</Link>
                 </li>
 
                 <li
-                    onClick={() => router.push("/bicycle")}
+                    onClick={() => router.push("/allPages/bicycle")}
                     className='cursor-pointer flex justify-start items-center py-4 border-b bg-white hover:bg-gray-100 transition-all hover:ps-2'>
                     <IoBicycle className='text-xl me-3' />
-                    <Link href="/bicycle">Bicycle & Accessories</Link>
+                    <Link href="/allPages/bicycle">Bicycle & Accessories</Link>
                 </li>
             </ul>
         </div>
