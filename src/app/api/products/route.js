@@ -7,10 +7,15 @@ export async function GET(req = NextRequest) {
     await connectionMongoDB();
     //   const tag = req.nextUrl.searchParams.get("list")
     //   revalidateTag(tag)
-    const allProducts = await product.find();
+    try {
+        const allProducts = await product.find();
 
-    // console.log("connected", allProducts)
-    return NextResponse.json(allProducts);
+        // console.log("connected", allProducts)
+        return NextResponse.json(allProducts);
+    } catch (error) {
+        console.log(error)
+        return "something went wrong. try again"
+    }
 
 }
 
