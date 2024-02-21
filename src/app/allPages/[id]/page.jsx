@@ -9,7 +9,6 @@ import BuyNowBtn from '@/app/component/BuyNowBtn/BuyNowBtn';
 
 const page = async ({ params }) => {
 
-    
     // fetching all data
     const response = await axios.get("http://localhost:3000/api/products");
     const allData = response.data; // get all the data
@@ -20,7 +19,7 @@ const page = async ({ params }) => {
     // All products of this category
     const allProductsOfThisCategory = await allData.filter(item => item?.category === product?.category)
 
-
+console.log(allProductsOfThisCategory)
 
     return (
         <div className=' mx-auto w-5/6'>
@@ -88,7 +87,7 @@ const page = async ({ params }) => {
             {/* related Product list */}
             <div className=' grid grid-rows-1 grid-cols-3 gap-4'>
                 {allProductsOfThisCategory.slice(0, 3).map(item => <Card
-
+                    key={item._id}
                     img={item.img}
                     cardHeading={item.name}
                     price={item.price}

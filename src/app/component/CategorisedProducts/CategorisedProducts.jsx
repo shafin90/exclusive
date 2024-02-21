@@ -50,7 +50,7 @@ const CategorisedProducts = ({ products }) => {
         }
     }, [lowerPrice, higherPrice])
 
-
+console.log("categorised products", categorizedProducts)
     return (
         <div>
             {/* Category Logo, Filtering, Sorting */}
@@ -121,7 +121,7 @@ const CategorisedProducts = ({ products }) => {
             <div className='gap-5 w-full grid md:grid-rows-5 md:grid-cols-2 lg:grid-rows-3 lg:grid-cols-3'>
                 {categorizedProducts.map((item) => (
                     <Card
-                        key={item.id} // Assuming each product has a unique id
+                        key={item._id} // Assuming each product has a unique id
                         img={item.img}
                         cardHeading={item.name}
                         price={item.price}
