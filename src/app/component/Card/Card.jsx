@@ -34,7 +34,7 @@ const Card = ({ BestSellingProducts, img, cardHeading, price, rating, id }) => {
             {/* Star rating ========================*/}
             <div className='ms-4 flex justify-start items-center'>
                 <StarRating ratings={rating ? rating : 3.5}></StarRating>
-              
+                <p className=' text-sm ms-2 pt-2'>({rating})</p>
             </div>
 
             {/* Details Button========================= */}

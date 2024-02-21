@@ -83,11 +83,11 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                    <Link href="/contactUs" className=' font-semibold hover:border-b-2 border-black pb-1'>Contact</Link>
+                    <Link href="/allPages/contactUs" className=' font-semibold hover:border-b-2 border-black pb-1'>Contact</Link>
                 </li>
 
                 <li>
-                    <Link href="/aboutUs" className=' font-semibold hover:border-b-2 border-black pb-1'>About Us</Link>
+                    <Link href="/allPages/aboutUs" className=' font-semibold hover:border-b-2 border-black pb-1'>About Us</Link>
                 </li>
             </ul>
 

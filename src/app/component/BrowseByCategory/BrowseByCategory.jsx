@@ -15,12 +15,12 @@ const BrowseByCategory = () => {
 
             {/*brows by Categories */}
             <div className=' grid md:grid-rows-2 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-6 gap-x-3'>
-                <Category category="phone" path="/bicycle" ></Category>
-                <Category category="computer" path="/computer"></Category>
-                <Category category="smartWatch" path="/watch"></Category>
-                <Category category="camera" path="/camera"></Category>
-                <Category category="headPhone" path="/headPhone"></Category>
-                <Category category="gaming" path="/game"></Category>
+                <Category category="phone" path="/allPages/bicycle" ></Category>
+                <Category category="computer" path="/allPages/computer"></Category>
+                <Category category="smartWatch" path="/allPages/watch"></Category>
+                <Category category="camera" path="/allPages/camera"></Category>
+                <Category category="headPhone" path="/allPages/headPhone"></Category>
+                <Category category="gaming" path="/allPages/game"></Category>
             </div>
         </div>
     );
