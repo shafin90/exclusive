@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { FaGoogle } from "react-icons/fa";
-import Login from '../component/Login/Login';
+import Login from '@/app/component/Login/Login';
 
 
 const page = () => {

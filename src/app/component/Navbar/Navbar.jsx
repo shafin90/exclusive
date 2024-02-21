@@ -57,9 +57,7 @@ const Navbar = () => {
 
 
     useEffect(() => {
-
         const newSearchedList = allProducts?.filter(item => productSearchInput === item?.name?.slice(0, productSearchInput?.length))
-
 
         if (productSearchInput?.length === 0) {
             setSearchedItem([])
@@ -70,7 +68,7 @@ const Navbar = () => {
     }, [productSearchInput, setProductSearchInput])
 
 
-    console.log(productSearchInput)
+
     return (
         <div className=' flex justify-between items-center w-5/6 mx-auto mt-8 mb-6'>
             {/* Logo============ */}
@@ -128,7 +126,7 @@ const Navbar = () => {
                     {/* wish icon */}
 
                     <TbJewishStar
-                        onClick={() => router.push('/wish')}
+                        onClick={() => router.push('/allPages/wish')}
                         className=' text-xl relative right-2  hover:rotate-90 transition-all hover:scale-125 cursor-pointer' />
 
                     {/* cart icon */}
@@ -137,14 +135,14 @@ const Navbar = () => {
                             style={{ fontSize: "10px", top: "-8px", right: "-8px", display: products.length === 0 && "none" }}
                             className=' absolute text-white bg-black w-4 h-4 rounded-full flex justify-center items-center'>{products.length}</span>
                         <IoCartOutline
-                            onClick={() => router.push('/cart')}
+                            onClick={() => router.push('/allPages/cart')}
                             className=' text-2xl  hover:scale-125 transition-all cursor-pointer' />
                     </div>
 
                     {/* login logout = if user available, then logout button, otherwise login================================*/}
                     {/* 1. login button */}
                     <SlLogin
-                        onClick={() => { router.push('/registerPage') }}
+                        onClick={() => { router.push('/allPages/registerPage') }}
                         className={user ? "hidden" : 'text-2xl  hover:scale-125 transition-all cursor-pointer'} />
 
                     {/*2. logout button login logout */}

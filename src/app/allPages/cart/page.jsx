@@ -1,13 +1,9 @@
 
 import React from 'react';
 
-import CartProductList from '../component/CartProductList/CartProductList';
+import CartProductList from '@/app/component/CartProductList/CartProductList';
 
-
-
-const page = () => {
-
-  
+const page = () => {  
     return (
         <CartProductList></CartProductList>
     );

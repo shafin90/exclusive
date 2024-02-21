@@ -39,7 +39,7 @@ const Login = () => {
             <p className=' flex justify-start items-center text-gray-500 text-sm mt-10'>
                 Already have account?
 
-                <Link className='text-gray-500 text-sm ms-3' href="/registerPage">sign up</Link>
+                <Link className='text-gray-500 text-sm ms-3' href="/allPages/registerPage">sign up</Link>
             </p>
 
 

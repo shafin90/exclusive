@@ -110,7 +110,7 @@ const Register = () => {
                 {/* already have an account? */}
                 <p className=' flex justify-start items-center text-gray-500 text-sm mt-10'>
                     Already have account?
-                    <Link className='text-gray-500 text-sm ms-2' href="/loginPage">Login</Link>
+                    <Link className='text-gray-500 text-sm ms-2' href="/allPages/loginPage">Login</Link>
                 </p>
             </div>
         </div>

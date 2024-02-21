@@ -6,9 +6,11 @@ import {reducePrice} from "@/redux/totalPriceSlice/totalPriceSlice"
 import { useRouter } from 'next/navigation';
 
 const CartProductList = () => {
+    
     const products = useSelector((state) => state.productList.value)
     const dispatch = useDispatch()
     const router = useRouter();
+    
     return (
         <div className=' mx-auto w-5/6 mt-14'>
             {/* Product list */}
@@ -27,7 +29,7 @@ const CartProductList = () => {
 
                     {/* price and cross button */}
                     <div className=' flex justify-end items-center'>
-                        <p className=' text-sm me-3'>${(item.price).toFixed(2)}</p>
+                        <p className=' text-sm me-3'>${item.price}</p>
 
                         <button
                             onClick={() => {

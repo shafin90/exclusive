@@ -1,6 +1,7 @@
 'use client'
+
 import React from 'react';
-import CartList from '../component/CartList/CartList';
+import CartList from '@/app/component/CartList/CartList';
 import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux'
 
