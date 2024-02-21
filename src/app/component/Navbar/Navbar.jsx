@@ -97,6 +97,7 @@ const Navbar = () => {
                     {
 
                         searchedItem?.map(item => <li
+                            key={item._id}
                             onClick={() => {
                                 setSearchedItem([])
                                 setProductSearchInput("")

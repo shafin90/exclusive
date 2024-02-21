@@ -16,7 +16,7 @@ const WishList = () => {
                 products.length === 0 && "No more products availavle in the wish list"
             }</p>
             {
-                products.map(item => <div className=' flex justify-between items-center'>
+                products.map(item => <div key={item._id} className=' flex justify-between items-center'>
 
                     {/* image and name section */}
                     <div className=' flex justify-start items-center'>
