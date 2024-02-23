@@ -33,14 +33,15 @@ const Register = () => {
 
 
     const handleSubmit = () => {
-        // event.preventDefault();
+        event.preventDefault();
         console.log("what can i do?")
 
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 // Signed up 
-                // const user = userCredential.user;
-                dispatch(addUser({ name, email, password }))
+                const user = userCredential.user;
+                // dispatch(addUser({ name, email, password }))
+                dispatch(addUser(user))
 
                 // Make a POST request using Axios
                 axios.post("/api/users", {

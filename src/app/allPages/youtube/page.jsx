@@ -5,9 +5,9 @@ import CategorisedProducts from '@/app/component/CategorisedProducts/Categorised
 const page = async () => {
 
     const response = await axios.get("http://localhost:3000/api/products");
-    const allData = response.data; // get all the data
+    const allData = await response.data; // get all the data
 
-    let youtubeData = allData.filter(item => item.category === "Youtube Studio Gear");// get all youtube related products
+    let youtubeData = await allData.filter(item => item.category === "Youtube Studio Gear");// get all youtube related products
     
     return (
         <div className=' w-10/12 mx-auto mt-14'>

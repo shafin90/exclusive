@@ -13,7 +13,9 @@ const BuyNowBtn = ({ product }) => {
     return (
         <button
             onClick={() => {
+        
                 router.push("/allPages/checkOut")
+
                 
                 // Dispatching addPrice reducer to make totalprice
                 dispatch(addPrice((product.price*count).toFixed(2)))

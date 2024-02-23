@@ -1,9 +1,10 @@
 // components/CheckoutForm.js
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios'; // Import axios
 import { useRouter } from 'next/navigation';
+import { clearList } from '@/redux/productListSlice/productListSlice'
 
 const CheckoutForm = () => {
   const stripe = useStripe();
@@ -11,7 +12,8 @@ const CheckoutForm = () => {
   const [loading, setLoading] = useState(false);
   const totalPriceAmount = useSelector((state) => state.totalPrice.value);
   const router = useRouter();
-
+  const productListInCart = useSelector((state) => state.productList.value)
+  const dispatch = useDispatch()
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -53,8 +55,9 @@ const CheckoutForm = () => {
 
 
         if (data.clientSecret) {
+          alert("payment successfull")
           router.push('/')
-          console.log("done")
+          dispatch(clearList())
         } else {
           alert('Something went wrong. Try again.');
         }

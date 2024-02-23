@@ -117,7 +117,7 @@ const Navbar = () => {
                         placeholder='What are you looking for?'
                         onChange={e => setProductSearchInput(e.target.value)}
                         className='ps-5 py-4 text-sm bg-transparent w-10/12 border-none outline-none focus:border-none'
-                        value={productSearchInput}
+                        // value={productSearchInput}
                     />
                     <IoIosSearch className='w-2/12 text-xl cursor-pointer hover:scale-150 transition-all' />
                 </div>
@@ -143,7 +143,7 @@ const Navbar = () => {
                     {/* login logout = if user available, then logout button, otherwise login================================*/}
                     {/* 1. login button */}
                     <SlLogin
-                        onClick={() => { router.push('/allPages/registerPage') }}
+                        onClick={() => { router.push('/allPages/loginPage') }}
                         className={user ? "hidden" : 'text-2xl  hover:scale-125 transition-all cursor-pointer'} />
 
                     {/*2. logout button login logout */}

@@ -6,9 +6,9 @@ import { useSelector } from 'react-redux'
 
 const CheckOut = () => {
     const router = useRouter();
-
     const user = useSelector((state) => state.user.value)
 
+    // When user try to come in this page, he will be redirected to homepage if he didn't logged in
     if (!user) {
         router.push("/")
     }
@@ -101,7 +101,7 @@ const CheckOut = () => {
 
                     {/* order button */}
                     <button
-                        onClick={() => router.push('/payment')}
+                        onClick={() => router.push('/allPages/payment')}
                         style={{ border: "1px solid black" }}
                         className=' px-5 py-2 bg-black hover:bg-white text-white hover:text-black cursor-pointer transition-all'>
                         Place Order
